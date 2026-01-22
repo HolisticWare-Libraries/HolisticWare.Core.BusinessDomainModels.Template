@@ -1,0 +1,31 @@
+name: Build Templates
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    strategy:
+      fail-fast: false
+      matrix:
+        net: [ '9.0', '10.0' ]
+        os: [ macos-latest, windows-latest, ubuntu-latest ]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - name: Checkout
+      # https://github.com/actions/checkout
+      uses: actions/checkout@v6
+    - name: Setup .NET
+      # https://github.com/actions/setup-dotnet
+      uses: actions/setup-dotnet@v5
+    - name: Build Solution 
+      run: dotnet build source/source.slnx
+    - name: Upload Artifacts
+      # https://github.com/actions/upload-artifact
+      uses: actions/upload-artifact@v6
+      with:
+        name: nuget
+        path: src/Microsoft.Maui.Templates.MauiMultiHeadApp/bin/Release/*.nupkg
