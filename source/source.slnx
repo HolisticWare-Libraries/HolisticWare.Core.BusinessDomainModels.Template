@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/source/" />
+  <Folder Name="/source/business-domain-logic-models/">
+    <Project Path="business-domain-logic-models/HolisticWare.Core.BusinessDomainLogicModels/HolisticWare.Core.BusinessDomainLogicModels.csproj" />
+    <Project Path="user-interface-ui/HolisticWare.Core.UserInterfaceUI.MAUI/HolisticWare.Core.UserInterfaceUI.MAUI.csproj" />
+    <Project Path="user-interface-ui/HolisticWare.Core.UserInterfaceUI.Razor/HolisticWare.Core.UserInterfaceUI.Razor.csproj" />
+    <Project Path="user-interface-ui/HolisticWare.Core.UserInterfaceUI/HolisticWare.Core.UserInterfaceUI.csproj" />
+  </Folder>
+</Solution>
