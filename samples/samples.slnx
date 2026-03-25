@@ -1,6 +1,88 @@
 <Solution>
-  <Folder Name="/source/" />
-  <Folder Name="/source/business-domain-logic-models/">
-    <Project Path="../source/business-domain-logic-models/HolisticWare.Core.BusinessDomainLogicModels/HolisticWare.Core.BusinessDomainLogicModels.csproj" />
+  <Folder Name="/project/">
+    <File Path="../README.md" />
+    <File Path="../AGENTS.md" />
+    <File Path="../CLAUDE.md" />
+    <File Path="../GEMINI.md" />
+    <File Path="../QWEN.md" />
+    <File Path="../Directory.Build.props" />
+    <File Path="../LICENSE" />
+  </Folder>
+  <Folder Name="/project/samples/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props.txt" />
+  </Folder>
+  <Folder Name="/project/samples/clients/" />
+  <Folder Name="/project/samples/clients/console/" />
+  <Folder Name="/project/samples/clients/console/cli/" />
+  <Folder Name="/project/samples/clients/console/tui/" />
+  <Folder Name="/project/samples/clients/maui/" />
+  <Folder Name="/project/samples/clients/maui-hybrid-blazor/" />
+  <Folder Name="/project/samples/clients/blazor/" />
+  <Folder Name="/project/samples/clients/blazor/wasm/" />
+  <Folder Name="/project/samples/servers/" />
+  <Folder Name="/project/samples/servers/apps/" />
+  <Folder Name="/project/samples/servers/apps/blazor/" />
+  <Folder Name="/project/samples/servers/apps-headless/" />
+  <Folder Name="/project/samples/servers/apps-headless/APIs/" />
+  <!--
+  must be included
+  -->
+  <Folder Name="/project/source/">
+    <File Path="..\source\Directory.Build.props" />
+    <File Path="..\source\Directory.Packages.props.txt" />
+  </Folder>
+  <Folder Name="/project/source/business-domain-logic-models/">
+    <File Path="..\source\business-domain-logic-models\Directory.Build.props" />
+    <Project Path="..\source\business-domain-logic-models\HolisticWare.Core.BusinessDomainLogicModels\HolisticWare.Core.BusinessDomainLogicModels.csproj" />
+  </Folder>
+  <Folder Name="/project/source/user-interface-ui/">
+    <File Path="..\source\user-interface-ui\Directory.Build.props" />
+    <Project Path="..\source\user-interface-ui\HolisticWare.Core.UserInterfaceUI\HolisticWare.Core.UserInterfaceUI.csproj" />
+  </Folder>  
+  <Folder Name="/project/source/user-interface-ui/maui/">
+    <File Path="..\source\user-interface-ui\maui\Directory.Build.props" />
+    <Project Path="..\source\user-interface-ui\maui\HolisticWare.Core.UserInterfaceUI.MAUI\HolisticWare.Core.UserInterfaceUI.MAUI.csproj" />
+  </Folder>
+  <Folder Name="/project/source/user-interface-ui/razor-blazor/">
+    <File Path="..\source\user-interface-ui\razor-blazor\Directory.Build.props" />
+    <Project Path="..\source\user-interface-ui\razor-blazor\HolisticWare.Core.UserInterfaceUI.Razor\HolisticWare.Core.UserInterfaceUI.Razor.csproj" />
+  </Folder>
+  <Folder Name="/project/source/utilities/">
+    <File Path="..\source\utilities\Directory.Build.props" />
+    <Project Path="..\source\utilities\HolisticWare.Utilities\HolisticWare.Utilities.csproj" />
+  </Folder>
+  <Folder Name="/project/source/infrastructure/">
+    <File Path="..\source\infrastructure\Directory.Build.props" />
+  </Folder>
+  <Folder Name="/project/source/infrastructure/data/">
+    <File Path="..\source\infrastructure\data\Directory.Build.props" />
+    <Project Path="..\source\infrastructure\data\HolisticWare.Infrastructure.Data\HolisticWare.Infrastructure.Data.csproj" />
+  </Folder>
+  <Folder Name="/project/source/infrastructure/database/">
+    <File Path="..\source\infrastructure\database\Directory.Build.props" />
+    <Project Path="..\source\infrastructure\database\HolisticWare.Infrastructure.DataBase\HolisticWare.Infrastructure.DataBase.csproj" />
+  </Folder>
+  <!--
+  can be included, but not required
+  -->
+  <Folder Name="/project/tests/">
+    <File Path="..\test\Directory.Build.props" />
+    <File Path="..\test\Directory.Packages.props.txt" />
+  </Folder>
+  <Folder Name="/project/tests/common/">
+    <File Path="..\test\common\Directory.Build.props" />
+  </Folder>    
+  <Folder Name="/project/tests/unit-tests/">
+    <File Path="..\test\unit-tests\Directory.Build.props" />
+    <Project Path="..\test\unit-tests\AppConsole.UnitTests.TUnit\AppConsole.UnitTests.TUnit.csproj" />
+    <Project Path="..\test\unit-tests\UnitTests.MSTest\UnitTests.MSTest.csproj" />
+    <Project Path="..\test\unit-tests\UnitTests.NUnit\UnitTests.NUnit.csproj" />
+    <Project Path="..\test\unit-tests\UnitTests.XUnit\UnitTests.XUnit.csproj" />
+  </Folder>
+  <Folder Name="/project/tests/benchmark-tests/">
+     <File Path="..\test\benchmark-tests\Directory.Build.props" />
+    <Project Path="..\test\benchmark-tests\AppConsole.BenchmarkTests.BenchmarkDotNet\AppConsole.BenchmarkTests.BenchmarkDotNet.csproj" />
+    <Project Path="..\test\benchmark-tests\BenchmarkTests.BenchmarkDotNet\BenchmarkTests.BenchmarkDotNet.csproj" />
   </Folder>
 </Solution>
