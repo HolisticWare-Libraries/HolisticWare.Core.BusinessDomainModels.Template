@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.Build.NoTargets/3.7.134">
+
+  <PropertyGroup>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <GenerateMSBuildEditorConfigFile>False</GenerateMSBuildEditorConfigFile>
+    <RootNamespace>UnitTests.Common.Shared</RootNamespace>
+    <!--
+    supress creation of:
+    
+    -->
+    <ImplicitUsings>enable</ImplicitUsings>
+  
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="**\*.cs" />
+  </ItemGroup>
+
+</Project>

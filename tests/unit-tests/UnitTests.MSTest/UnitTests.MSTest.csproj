@@ -1,17 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>net10.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\source\business-domain-logic-models\HolisticWare.Core.BusinessDomainLogicModels\HolisticWare.Core.BusinessDomainLogicModels.csproj" />
+  </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\common\UnitTests.Common.Shared\UnitTests.Common.Shared.csproj" />
+    <ProjectReference Include="..\..\common\UnitTests.Common\UnitTests.Common.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\common\UnitTests.Common.Shared\**\*.cs" LinkBase="UnitTests.Common.Shared" Visible="false" />
+  </ItemGroup>
+
+  <!--
+  CSC: Warning MSTEST0001 : Explicitly enable or disable tests parallelization 
+  (https://learn.microsoft.com/dotnet/core/testing/mstest-analyzers/mstest0001)
+  -->
   <ItemGroup>
     <PackageReference Include="MSTest" Version="4.0.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\source\business-domain-logic-models\HolisticWare.Core.BusinessDomainLogicModels\HolisticWare.Core.BusinessDomainLogicModels.csproj" />
-  </ItemGroup>
 
 </Project>
