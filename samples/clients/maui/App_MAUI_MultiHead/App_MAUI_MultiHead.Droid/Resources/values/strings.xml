@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">App_MAUI_MultiHead</string>
+    <string name="app_text">Hello, Android!</string>
+</resources>
