@@ -1,11 +1,9 @@
 <Project>
-    <Import Project="..\Directory.Build.props" />            
+    <Import Project="..\Directory.Build.props" />
 
-  <PropertyGroup>
-    <TargetFrameworks>net10.0;net9.0</TargetFrameworks>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <LangVersion>latest</LangVersion>
-  </PropertyGroup>
+    <PropertyGroup>
+        <TargetFrameworks>net10.0;net9.0</TargetFrameworks>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
 
 </Project>
