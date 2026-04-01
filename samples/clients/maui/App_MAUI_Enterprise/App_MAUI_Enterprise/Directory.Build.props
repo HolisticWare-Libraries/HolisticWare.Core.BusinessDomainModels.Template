@@ -1,0 +1,23 @@
+﻿<Project>
+
+	<PropertyGroup>
+		<LatestFramework>net8.0</LatestFramework>
+		<TargetFramework>$(LatestFramework)</TargetFramework>
+		<LangVersion>latest</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Version>1.0.0</Version>
+		<Authors>Author Name</Authors>
+		<Company>Company Name</Company>
+		<Copyright>Copyright @ Company Name</Copyright>
+		<PackageLicenseFile>License.txt</PackageLicenseFile>
+		<PackageProjectUrl>https://github.com/company</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/company</RepositoryUrl>
+		<RepositoryType>Public</RepositoryType>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Remove="**\*.DotSettings" />
+		<None Include="$(SolutionDir)\License.txt" Pack="True" PackagePath="" />
+	</ItemGroup>
+
+</Project>

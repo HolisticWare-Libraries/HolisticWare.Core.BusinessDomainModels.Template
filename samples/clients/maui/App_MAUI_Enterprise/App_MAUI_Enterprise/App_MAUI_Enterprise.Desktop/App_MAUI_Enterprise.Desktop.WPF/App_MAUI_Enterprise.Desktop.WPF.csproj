@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>$(TargetFramework)-windows</TargetFramework>
+		<OutputType>WinExe</OutputType>
+		<UseWPF>true</UseWPF>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\..\App_MAUI_Enterprise.Core\App_MAUI_Enterprise.Core\App_MAUI_Enterprise.Core.csproj" />
+	</ItemGroup>
+
+</Project>
