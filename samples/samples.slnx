@@ -6,18 +6,91 @@
     <File Path="../GEMINI.md" />
     <File Path="../QWEN.md" />
     <File Path="../Directory.Build.props" />
+    <File Path="../NuGet.config" />
     <File Path="../LICENSE" />
   </Folder>
   <Folder Name="/project/samples/">
     <File Path="Directory.Build.props" />
     <File Path="Directory.Packages.props.txt" />
   </Folder>
-  <Folder Name="/project/samples/clients/" />
-  <Folder Name="/project/samples/clients/console/" />
-  <Folder Name="/project/samples/clients/console/cli/" />
-  <Folder Name="/project/samples/clients/console/tui/" />
-  <Folder Name="/project/samples/clients/maui/" />
-  <Folder Name="/project/samples/clients/maui-hybrid-blazor/" />
+  <Folder Name="/project/samples/clients/">
+    <File Path="clients/console/Directory.Build.props" />
+  </Folder>  
+  <Folder Name="/project/samples/clients/console/">
+    <File Path="clients/console/Directory.Build.props" />
+  </Folder>
+  <Folder Name="/project/samples/clients/console/cli/">
+    <File Path="clients/console/cli/Directory.Build.props" />
+    <File Path="clients/console/cli/readme.md" />
+    <Project Path="clients/console/cli/AppConsole.SampleDemo/AppConsole.SampleDemo.csproj" />
+  </Folder>
+  <Folder Name="/project/samples/clients/console/tui/">
+  </Folder>  
+  <Folder Name="/project/samples/clients/maui/">
+    <Project Path="clients/maui/App_MAUI/App_MAUI.csproj" />
+    <Project Path="clients/maui/App_MAUIApp/App_MAUIApp.csproj" />
+    <Project Path="clients/maui/App_MAUI_Comet/App_MAUI_Comet/App_MAUI_Comet.csproj" />
+    <Project Path="clients/maui/App_MAUI_Enterprise/App_MAUI_Enterprise/App_MAUI_Enterprise.Core/App_MAUI_Enterprise.Core.UnitTest/App_MAUI_Enterprise.Core.UnitTest.csproj" />
+    <Project Path="clients/maui/App_MAUI_Enterprise/App_MAUI_Enterprise/App_MAUI_Enterprise.Core/App_MAUI_Enterprise.Core/App_MAUI_Enterprise.Core.csproj" />
+    <Project Path="clients/maui/App_MAUI_Enterprise/App_MAUI_Enterprise/App_MAUI_Enterprise.Desktop/App_MAUI_Enterprise.Desktop.WinForm/App_MAUI_Enterprise.Desktop.WinForm.csproj" />
+    <Project Path="clients/maui/App_MAUI_Enterprise/App_MAUI_Enterprise/App_MAUI_Enterprise.Desktop/App_MAUI_Enterprise.Desktop.WPF/App_MAUI_Enterprise.Desktop.WPF.csproj" />
+    <Project Path="clients/maui/App_MAUI_Enterprise/App_MAUI_Enterprise/App_MAUI_Enterprise.ML/App_MAUI_Enterprise.ML.Consume/App_MAUI_Enterprise.ML.Consume.csproj" />
+    <Project Path="clients/maui/App_MAUI_Enterprise/App_MAUI_Enterprise/App_MAUI_Enterprise.ML/App_MAUI_Enterprise.ML.Train/App_MAUI_Enterprise.ML.Train.csproj" />
+    <Project Path="clients/maui/App_MAUI_Enterprise/App_MAUI_Enterprise/App_MAUI_Enterprise.Mobile/App_MAUI_Enterprise.Mobile.UITest/App_MAUI_Enterprise.Mobile.UITest.csproj" />
+    <Project Path="clients/maui/App_MAUI_Enterprise/App_MAUI_Enterprise/App_MAUI_Enterprise.Mobile/App_MAUI_Enterprise.Mobile/App_MAUI_Enterprise.Mobile.csproj">
+      <Deploy />
+    </Project>
+    <Project Path="clients/maui/App_MAUI_Enterprise/App_MAUI_Enterprise/App_MAUI_Enterprise.Web/App_MAUI_Enterprise.Web.Static/App_MAUI_Enterprise.Web.Static.csproj" />
+    <Project Path="clients/maui/App_MAUI_Enterprise/App_MAUI_Enterprise/App_MAUI_Enterprise.Web/App_MAUI_Enterprise.Web.UnitTest/App_MAUI_Enterprise.Web.UnitTest.csproj" />
+    <Project Path="clients/maui/App_MAUI_Enterprise/App_MAUI_Enterprise/App_MAUI_Enterprise.Web/App_MAUI_Enterprise.Web/App_MAUI_Enterprise.Web.csproj" />
+    <Project Path="clients/maui/App_MAUI_Micro/App_MAUI_Micro.csproj" />
+    <Project Path="clients/maui/App_MAUI_MultiProject/App_MAUI_MultiProject/App_MAUI_MultiProject.csproj" />
+    <Project Path="clients/maui/App_MAUI_MultiProject/App_MAUI_MultiProject.Mac/App_MAUI_MultiProject.Mac.csproj">
+      <Deploy />
+    </Project>
+    <Project Path="clients/maui/App_MAUI_MultiHead/App_MAUI_MultiHead.Droid/App_MAUI_MultiHead.Droid.csproj">
+      <Deploy />
+    </Project>
+    <Project Path="clients/maui/App_MAUI_MultiHead/App_MAUI_MultiHead.iOS/App_MAUI_MultiHead.iOS.csproj">
+      <Deploy />
+    </Project>
+    <Project Path="clients/maui/App_MAUI_MultiHead/App_MAUI_MultiHead.Mac/App_MAUI_MultiHead.Mac.csproj">
+      <Deploy />
+    </Project>
+    <Project Path="clients/maui/App_MAUI_MultiHead/App_MAUI_MultiHead.WinUI/App_MAUI_MultiHead.WinUI.csproj">
+      <Platform Project="x86" />
+      <Deploy />
+    </Project>
+    <Project Path="clients/maui/App_MAUI_MultiHead/App_MAUI_MultiHead/App_MAUI_MultiHead.csproj" />
+    <Project Path="clients/maui/App_MAUI_MultiProject/App_MAUI_MultiProject.Droid/App_MAUI_MultiProject.Droid.csproj" />
+    <Project Path="clients/maui/App_MAUI_MultiProject/App_MAUI_MultiProject.iOS/App_MAUI_MultiProject.iOS.csproj" />
+    <Project Path="clients/maui/App_MAUI_MultiProject/App_MAUI_MultiProject.WinUI/App_MAUI_MultiProject.WinUI.csproj" />
+  </Folder>
+  <Folder Name="/project/samples/clients/maui-hybrid-blazor/">
+    <Project Path="clients/maui-blazor-hybrid/App_BlazorHybrid/App_BlazorHybrid.Android/App_BlazorHybrid.Android.csproj">
+      <Deploy />
+    </Project>
+    <Project Path="clients/maui-blazor-hybrid/App_BlazorHybrid/App_BlazorHybrid.iOS/App_BlazorHybrid.iOS.csproj">
+      <Platform Project="iPhoneSimulator" />
+      <Deploy />
+    </Project>
+    <Project Path="clients/maui-blazor-hybrid/App_BlazorHybrid/App_BlazorHybrid.macOS/App_BlazorHybrid.macOS.csproj">
+      <Deploy />
+    </Project>
+    <Project Path="clients/maui-blazor-hybrid/App_BlazorHybrid/App_BlazorHybrid.Windows/App_BlazorHybrid.Windows.csproj" />
+    <Project Path="clients/maui-blazor-hybrid/App_BlazorHybrid/App_BlazorHybrid/App_BlazorHybrid.csproj" />
+    <Project Path="clients/maui-blazor-hybrid/App_Blazor_MobileBindings/App_Blazor_MobileBindings.Android/App_Blazor_MobileBindings.Android.csproj">
+      <Deploy />
+    </Project>
+    <Project Path="clients/maui-blazor-hybrid/App_Blazor_MobileBindings/App_Blazor_MobileBindings.iOS/App_Blazor_MobileBindings.iOS.csproj">
+      <Platform Project="iPhoneSimulator" />
+      <Deploy />
+    </Project>
+    <Project Path="clients/maui-blazor-hybrid/App_Blazor_MobileBindings/App_Blazor_MobileBindings/App_Blazor_MobileBindings.csproj" />
+    <Project Path="clients/maui-blazor-hybrid/App_MAUI_Blazor_Hybrid/App_MAUI_Blazor_Hybrid.csproj" />
+  </Folder>
+  <Folder Name="/project/samples/clients/avalonia/" />
+  <Folder Name="/project/samples/clients/uno-platform/" />
   <Folder Name="/project/samples/clients/blazor/" />
   <Folder Name="/project/samples/clients/blazor/wasm/" />
   <Folder Name="/project/samples/servers/" />
@@ -29,60 +102,67 @@
   must be included
   -->
   <Folder Name="/project/source/">
-    <File Path="..\source\Directory.Build.props" />
-    <File Path="..\source\Directory.Packages.props.txt" />
+    <File Path="../source/Directory.Build.props" />
+    <File Path="../source/Directory.Packages.props.txt" />
   </Folder>
   <Folder Name="/project/source/business-domain-logic-models/">
-    <File Path="..\source\business-domain-logic-models\Directory.Build.props" />
-    <Project Path="..\source\business-domain-logic-models\HolisticWare.Core.BusinessDomainLogicModels\HolisticWare.Core.BusinessDomainLogicModels.csproj" />
+    <File Path="../source/business-domain-logic-models/Directory.Build.props" />
+    <Project Path="../source/business-domain-logic-models/HolisticWare.Core.BusinessDomainLogicModels/HolisticWare.Core.BusinessDomainLogicModels.csproj" />
   </Folder>
   <Folder Name="/project/source/user-interface-ui/">
-    <File Path="..\source\user-interface-ui\Directory.Build.props" />
-    <Project Path="..\source\user-interface-ui\HolisticWare.Core.UserInterfaceUI\HolisticWare.Core.UserInterfaceUI.csproj" />
+    <File Path="../source/user-interface-ui/Directory.Build.props" />
+    <Project Path="../source/user-interface-ui/HolisticWare.Core.UserInterfaceUI/HolisticWare.Core.UserInterfaceUI.csproj" />
   </Folder>  
   <Folder Name="/project/source/user-interface-ui/maui/">
-    <File Path="..\source\user-interface-ui\maui\Directory.Build.props" />
-    <Project Path="..\source\user-interface-ui\maui\HolisticWare.Core.UserInterfaceUI.MAUI\HolisticWare.Core.UserInterfaceUI.MAUI.csproj" />
+    <File Path="../source/user-interface-ui/maui/Directory.Build.props" />
+    <Project Path="../source/user-interface-ui/maui/HolisticWare.Core.UserInterfaceUI.MAUI/HolisticWare.Core.UserInterfaceUI.MAUI.csproj" />
   </Folder>
   <Folder Name="/project/source/user-interface-ui/razor-blazor/">
-    <File Path="..\source\user-interface-ui\razor-blazor\Directory.Build.props" />
-    <Project Path="..\source\user-interface-ui\razor-blazor\HolisticWare.Core.UserInterfaceUI.Razor\HolisticWare.Core.UserInterfaceUI.Razor.csproj" />
+    <File Path="../source/user-interface-ui/razor-blazor/Directory.Build.props" />
+    <Project Path="../source/user-interface-ui/razor-blazor/HolisticWare.Core.UserInterfaceUI.Razor/HolisticWare.Core.UserInterfaceUI.Razor.csproj" />
   </Folder>
   <Folder Name="/project/source/utilities/">
-    <File Path="..\source\utilities\Directory.Build.props" />
-    <Project Path="..\source\utilities\HolisticWare.Utilities\HolisticWare.Utilities.csproj" />
+    <File Path="../source/utilities/Directory.Build.props" />
+    <Project Path="../source/utilities/HolisticWare.Utilities/HolisticWare.Utilities.csproj" />
   </Folder>
   <Folder Name="/project/source/infrastructure/">
-    <File Path="..\source\infrastructure\Directory.Build.props" />
+    <File Path="../source/infrastructure/Directory.Build.props" />
   </Folder>
   <Folder Name="/project/source/infrastructure/data/">
-    <File Path="..\source\infrastructure\data\Directory.Build.props" />
-    <Project Path="..\source\infrastructure\data\HolisticWare.Infrastructure.Data\HolisticWare.Infrastructure.Data.csproj" />
+    <File Path="../source/infrastructure/data/Directory.Build.props" />
+    <Project Path="../source/infrastructure/data/HolisticWare.Infrastructure.Data/HolisticWare.Infrastructure.Data.csproj" />
   </Folder>
   <Folder Name="/project/source/infrastructure/database/">
-    <File Path="..\source\infrastructure\database\Directory.Build.props" />
-    <Project Path="..\source\infrastructure\database\HolisticWare.Infrastructure.DataBase\HolisticWare.Infrastructure.DataBase.csproj" />
+    <File Path="../source/infrastructure/database/Directory.Build.props" />
+    <Project Path="../source/infrastructure/database/HolisticWare.Infrastructure.DataBase/HolisticWare.Infrastructure.DataBase.csproj" />
   </Folder>
   <!--
   can be included, but not required
   -->
   <Folder Name="/project/tests/">
-    <File Path="..\test\Directory.Build.props" />
-    <File Path="..\test\Directory.Packages.props.txt" />
+    <File Path="../test/Directory.Build.props" />
+    <File Path="../test/Directory.Packages.props.txt" />
   </Folder>
   <Folder Name="/project/tests/common/">
-    <File Path="..\test\common\Directory.Build.props" />
+    <File Path="../test/common/Directory.Build.props" />
   </Folder>    
   <Folder Name="/project/tests/unit-tests/">
-    <File Path="..\test\unit-tests\Directory.Build.props" />
-    <Project Path="..\test\unit-tests\AppConsole.UnitTests.TUnit\AppConsole.UnitTests.TUnit.csproj" />
-    <Project Path="..\test\unit-tests\UnitTests.MSTest\UnitTests.MSTest.csproj" />
-    <Project Path="..\test\unit-tests\UnitTests.NUnit\UnitTests.NUnit.csproj" />
-    <Project Path="..\test\unit-tests\UnitTests.XUnit\UnitTests.XUnit.csproj" />
+    <File Path="../test/unit-tests/Directory.Build.props" />
+    <Project Path="../test/unit-tests/AppConsole.UnitTests.TUnit/AppConsole.UnitTests.TUnit.csproj" />
+    <Project Path="../test/unit-tests/UnitTests.MSTest/UnitTests.MSTest.csproj" />
+    <Project Path="../test/unit-tests/UnitTests.NUnit/UnitTests.NUnit.csproj" />
+    <Project Path="../test/unit-tests/UnitTests.XUnit/UnitTests.XUnit.csproj" />
+  </Folder>
+  <Folder Name="/project/tests/end-to-end-tests/">
+    <File Path="../test/end-to-end-tests/Directory.Build.props" />
+    <Project Path="../tests/end-to-end-tests/EndToEndTests.TUnit/EndToEndTests.TUnit.csproj" />
+    <Project Path="../tests/end-to-end-tests/EndToEndTests.MSTest/EndToEndTests.MSTest.csproj" />
+    <Project Path="../tests/end-to-end-tests/EndToEndTests.NUnit/EndToEndTests.NUnit.csproj" />
+    <Project Path="../tests/end-to-end-tests/EndToEndTests.XUnit/EndToEndTests.XUnit.csproj" />
   </Folder>
   <Folder Name="/project/tests/benchmark-tests/">
-     <File Path="..\test\benchmark-tests\Directory.Build.props" />
-    <Project Path="..\test\benchmark-tests\AppConsole.BenchmarkTests.BenchmarkDotNet\AppConsole.BenchmarkTests.BenchmarkDotNet.csproj" />
-    <Project Path="..\test\benchmark-tests\BenchmarkTests.BenchmarkDotNet\BenchmarkTests.BenchmarkDotNet.csproj" />
+     <File Path="../test/benchmark-tests/Directory.Build.props" />
+    <Project Path="../test/benchmark-tests/AppConsole.BenchmarkTests.BenchmarkDotNet/AppConsole.BenchmarkTests.BenchmarkDotNet.csproj" />
+    <Project Path="../test/benchmark-tests/BenchmarkTests.BenchmarkDotNet/BenchmarkTests.BenchmarkDotNet.csproj" />
   </Folder>
 </Solution>
