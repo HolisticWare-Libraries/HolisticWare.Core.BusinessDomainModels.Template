@@ -1,6 +1,7 @@
 ﻿namespace HolisticWare.Core.UserInterfaceUI.MAUI;
 
 // All the code in this file is only included on Mac Catalyst.
-public class PlatformClass1
+public partial class
+                                        PlatformClass1
 {
 }
