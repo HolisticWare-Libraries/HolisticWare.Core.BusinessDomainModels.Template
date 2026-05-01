@@ -1,0 +1,64 @@
+<Solution>
+  <Folder Name="/project/">
+    <File Path="./README.md" />
+    <File Path="./AGENTS.md" />
+    <File Path="./CLAUDE.md" />
+    <File Path="./GEMINI.md" />
+    <File Path="./QWEN.md" />
+    <File Path="./Directory.Build.props" />
+    <File Path="./LICENSE" />
+  </Folder>
+  <!--
+  source libraries 
+  business/domain logic
+  infrastructure
+  -->
+  <Folder Name="/project/source/">
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props.txt" />
+  </Folder>
+  <Folder Name="/project/source/business-domain-logic-models/">
+    <File Path="./source/business-domain-logic-models/Directory.Build.props" />
+    <Project Path="./source/business-domain-logic-models/HolisticWare.Core.BusinessDomainLogicModels/HolisticWare.Core.BusinessDomainLogicModels.csproj" />
+  </Folder>
+  <Folder Name="/project/source/user-interface-ui/">
+    <File Path="./source/user-interface-ui/Directory.Build.props" />
+    <Project Path="./source/user-interface-ui/HolisticWare.Core.UserInterfaceUI/HolisticWare.Core.UserInterfaceUI.csproj" />
+  </Folder>  
+  <Folder Name="/project/source/user-interface-ui/maui/">
+    <File Path="./source/user-interface-ui/maui/Directory.Build.props" />
+    <Project Path="./source/user-interface-ui/maui/HolisticWare.Core.UserInterfaceUI.MAUI/HolisticWare.Core.UserInterfaceUI.MAUI.csproj" />
+  </Folder>
+  <Folder Name="/project/source/user-interface-ui/razor-blazor/">
+    <File Path="./source/user-interface-ui/razor-blazor/Directory.Build.props" />
+    <Project Path="./source/user-interface-ui/razor-blazor/HolisticWare.Core.UserInterfaceUI.Razor/HolisticWare.Core.UserInterfaceUI.Razor.csproj" />
+  </Folder>
+  <Folder Name="/project/source/utilities/">
+    <File Path="./source/utilities/Directory.Build.props" />
+    <Project Path="./source/utilities/HolisticWare.Utilities/HolisticWare.Utilities.csproj" />
+  </Folder>
+  <Folder Name="/project/source/infrastructure/">
+    <File Path="./source/infrastructure/Directory.Build.props" />
+  </Folder>
+  <Folder Name="/project/source/infrastructure/data/">
+    <File Path="./source/infrastructure/data/Directory.Build.props" />
+    <Project Path="./source/infrastructure/data/HolisticWare.Infrastructure.Data/HolisticWare.Infrastructure.Data.csproj" />
+  </Folder>
+  <Folder Name="/project/source/infrastructure/database/">
+    <File Path="./source/infrastructure/database/Directory.Build.props" />
+    <Project Path="./source/infrastructure/database/HolisticWare.Infrastructure.DataBase/HolisticWare.Infrastructure.DataBase.csproj" />
+  </Folder>
+  <!--
+  samples
+  -->
+  <!--
+  tests
+  -->
+  <!--
+  docs
+  -->
+  <!--
+  AI coding assistants
+  -->
+
+</Solution>
