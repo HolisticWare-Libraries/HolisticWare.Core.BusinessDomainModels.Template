@@ -49,9 +49,6 @@
     <Project Path="./source/infrastructure/database/HolisticWare.Infrastructure.DataBase/HolisticWare.Infrastructure.DataBase.csproj" />
   </Folder>
   <!--
-  samples
-  -->
-  <!--
   tests
   -->
   <Folder Name="/project/tests/">
@@ -61,20 +58,33 @@
   <Folder Name="/project/tests/common/">
     <File Path="./tests/common/Directory.Build.props" />
     <File Path="./tests/Directory.Build.props" />
+    <Project Path="tests/common/Tests.Common.Shared/Tests.Common.Shared.csproj" />
   </Folder>
-  <Folder Name="/project/tests/unit-tests/common/" >
-     <File Path="./tests/unit-tests/common/Directory.Build.props" />
+  <!--
+  tests
+      unit-tests
+  -->
+  <Folder Name="/project/tests/unit-tests/common/">
+    <File Path="./tests/unit-tests/common/Directory.Build.props" />
+    <Project Path="./tests/unit-tests/common/UnitTests.Common/UnitTests.Common.csproj" />
+    <Project Path="./tests/unit-tests/common/UnitTests.Common.Shared/UnitTests.Common.Shared.csproj" />
   </Folder>  
   <Folder Name="/project/tests/unit-tests/">
-     <File Path="./tests/unit-tests/Directory.Build.props" />
+    <File Path="./tests/unit-tests/Directory.Build.props" />
     <Project Path="./tests/unit-tests/AppConsole.UnitTests.TUnit/AppConsole.UnitTests.TUnit.csproj" />
     <Project Path="./tests/unit-tests/UnitTests.MSTest/UnitTests.MSTest.csproj" />
     <Project Path="./tests/unit-tests/UnitTests.NUnit/UnitTests.NUnit.csproj" />
     <Project Path="./tests/unit-tests/UnitTests.TUnit/UnitTests.TUnit.csproj" />
     <Project Path="./tests/unit-tests/UnitTests.XUnit/UnitTests.XUnit.csproj" />
   </Folder>
-  <Folder Name="/project/tests/benchmark-tests/common/" >
+  <!--
+  tests
+      benchmark-tests
+  -->
+  <Folder Name="/project/tests/benchmark-tests/common/">
      <File Path="./tests/benchmark-tests/common/Directory.Build.props" />
+    <Project Path="./tests/benchmark-tests/common/BenchmarkTests.Common/BenchmarkTests.Common.csproj" />
+    <Project Path="./tests/benchmark-tests/common/BenchmarkTests.Common.Shared/BenchmarkTests.Common.Shared.csproj" />
   </Folder>  
   <Folder Name="/project/tests/benchmark-tests/">
      <File Path="./tests/benchmark-tests/Directory.Build.props" />
@@ -92,8 +102,72 @@
   <!--
   docs
   -->
+  <Folder Name="/project/docs/">
+  </Folder>
   <!--
   AI coding assistants
   -->
+  <Folder Name="/project/.github/">
+  </Folder>
+  <Folder Name="/project/.opencode/">
+  </Folder>
+  <Folder Name="/project/.vscode/">
+  </Folder>
+  <Folder Name="/project/.hwaifs/">
+  </Folder>
+  <!--
+  samples demos
+  -->
+  <Folder Name="/project/samples/">
+    <File Path="./samples/Directory.Build.props" />
+    <File Path="./samples/Directory.Packages.props.txt" />
+  </Folder>
+  <Folder Name="/project/samples/clients/">
+  </Folder>
+  <Folder Name="/project/samples/clients/console/">
+  </Folder>
+  <Folder Name="/project/samples/clients/console/tui/">
+  </Folder>
+  <Folder Name="/project/samples/clients/console/cli/">
+  </Folder>
+  <Folder Name="/project/samples/clients/maui/">
+  </Folder>
+  <Folder Name="/project/samples/clients/maui/App_MAUI/">
+  </Folder>
+  <Folder Name="/project/samples/clients/maui/App_MAUIApp/">
+  </Folder>
+  <Folder Name="/project/samples/clients/maui/App_MAUI_Comet/">
+  </Folder>
+  <Folder Name="/project/samples/clients/maui/App_MAUI_Micro/">
+  </Folder>
+  <Folder Name="/project/samples/clients/maui/App_MAUI_Enterprise/">
+  </Folder>
+  <Folder Name="/project/samples/clients/maui/App_MAUI_MultiProject/">
+  </Folder>  
+  <Folder Name="/project/samples/clients/maui/App_MAUI_MultiHead/">
+  </Folder>
+  <Folder Name="/project/samples/clients/maui-blazor-hybrid/App_MAUI_Blazor_Hybrid/">
+  </Folder>
+  <Folder Name="/project/samples/clients/maui-blazor-hybrid/App_Blazor_MobileBindings/">
+  </Folder>
+  <Folder Name="/project/samples/clients/maui-blazor-hybrid/App_BlazorHybrid/">
+  </Folder>
+  
+  <Folder Name="/project/samples/clients/avalonia/">
+  </Folder>
+  <Folder Name="/project/samples/servers/">
+  </Folder>
+  <Folder Name="/project/samples/servers/blazor/">
+  </Folder>
+  <Folder Name="/project/samples/servers/apps-headless/">
+  </Folder>
+  <Folder Name="/project/samples/servers/apps-headless/APIs/">
+  </Folder>
+  <Folder Name="/project/samples/orchestration/">
+  </Folder>
+  <Folder Name="/project/samples/orchestration/App_Aspire_Starter/">
+  </Folder>
+  <Folder Name="/project/samples/orchestration/App_Aspire_AppHost_Single_File/">
+  </Folder>
 
 </Solution>
