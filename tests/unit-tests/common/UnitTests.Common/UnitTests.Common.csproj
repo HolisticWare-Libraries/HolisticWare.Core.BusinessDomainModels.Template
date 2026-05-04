@@ -3,4 +3,8 @@
   <PropertyGroup>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\source\business-domain-logic-models\HolisticWare.Core.BusinessDomainLogicModels\HolisticWare.Core.BusinessDomainLogicModels.csproj" />
+  </ItemGroup>
+
 </Project>
