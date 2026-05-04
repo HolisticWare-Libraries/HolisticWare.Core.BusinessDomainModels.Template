@@ -1,6 +1,7 @@
 ﻿namespace UnitTests.Common;
 
-public class Class1
+public partial class
+                                        Class1
 {
 
 }
