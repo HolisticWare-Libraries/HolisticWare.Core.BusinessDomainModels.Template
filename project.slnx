@@ -52,10 +52,11 @@
   tests
   -->
   <Folder Name="/project/tests/">
+    <File Path="./tests/readme.md" />
     <File Path="./tests/Directory.Build.props" />
-    <File Path="./tests/Directory.Packages.props.txt" />
   </Folder>
   <Folder Name="/project/tests/common/">
+    <File Path="./tests/benchmark-tests/common/readme.md" />
     <File Path="./tests/common/Directory.Build.props" />
     <File Path="./tests/Directory.Build.props" />
     <Project Path="tests/common/Tests.Common.Shared/Tests.Common.Shared.csproj" />
@@ -64,12 +65,8 @@
   tests
       unit-tests
   -->
-  <Folder Name="/project/tests/unit-tests/common/">
-    <File Path="./tests/unit-tests/common/Directory.Build.props" />
-    <Project Path="./tests/unit-tests/common/UnitTests.Common/UnitTests.Common.csproj" />
-    <Project Path="./tests/unit-tests/common/UnitTests.Common.Shared/UnitTests.Common.Shared.csproj" />
-  </Folder>  
   <Folder Name="/project/tests/unit-tests/">
+    <File Path="./tests/unit-tests/readme.md" />
     <File Path="./tests/unit-tests/Directory.Build.props" />
     <Project Path="./tests/unit-tests/AppConsole.UnitTests.TUnit/AppConsole.UnitTests.TUnit.csproj" />
     <Project Path="./tests/unit-tests/UnitTests.MSTest/UnitTests.MSTest.csproj" />
@@ -77,20 +74,31 @@
     <Project Path="./tests/unit-tests/UnitTests.TUnit/UnitTests.TUnit.csproj" />
     <Project Path="./tests/unit-tests/UnitTests.XUnit/UnitTests.XUnit.csproj" />
   </Folder>
+  <Folder Name="/project/tests/unit-tests/common/">
+    <File Path="./tests/unit-tests/common/Directory.Build.props" />
+    <Project Path="./tests/unit-tests/common/UnitTests.Common/UnitTests.Common.csproj" />
+    <Project Path="./tests/unit-tests/common/UnitTests.Common.Shared/UnitTests.Common.Shared.csproj" />
+  </Folder>  
   <!--
   tests
       benchmark-tests
   -->
-  <Folder Name="/project/tests/benchmark-tests/common/">
-     <File Path="./tests/benchmark-tests/common/Directory.Build.props" />
-    <Project Path="./tests/benchmark-tests/common/BenchmarkTests.Common/BenchmarkTests.Common.csproj" />
-    <Project Path="./tests/benchmark-tests/common/BenchmarkTests.Common.Shared/BenchmarkTests.Common.Shared.csproj" />
-  </Folder>  
   <Folder Name="/project/tests/benchmark-tests/">
-     <File Path="./tests/benchmark-tests/Directory.Build.props" />
+    <File Path="./tests/benchmark-tests/readme.md" />
+    <File Path="./tests/benchmark-tests/Directory.Build.props" />
     <Project Path="./tests/benchmark-tests/AppConsole.BenchmarkTests.BenchmarkDotNet/AppConsole.BenchmarkTests.BenchmarkDotNet.csproj" />
     <Project Path="./tests/benchmark-tests/BenchmarkTests.BenchmarkDotNet/BenchmarkTests.BenchmarkDotNet.csproj" />
   </Folder>
+  <Folder Name="/project/tests/benchmark-tests/common/">
+    <File Path="./tests/benchmark-tests/common/readme.md" />
+    <File Path="./tests/benchmark-tests/common/Directory.Build.props" />
+    <Project Path="./tests/benchmark-tests/common/BenchmarkTests.Common/BenchmarkTests.Common.csproj" />
+    <Project Path="./tests/benchmark-tests/common/BenchmarkTests.Common.Shared/BenchmarkTests.Common.Shared.csproj" />
+  </Folder>  
+  <!--
+  tests
+      end-to-end tests
+  -->
   <Folder Name="/project/tests/end-to-end-tests/">
      <File Path="./tests/end-to-end-tests/Directory.Build.props" />
     <Project Path="./tests/end-to-end-tests/AppConsole.EndToEndTests.TUnit/AppConsole.EndToEndTests.TUnit.csproj" />
