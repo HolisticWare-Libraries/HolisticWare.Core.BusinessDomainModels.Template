@@ -60,6 +60,7 @@
     <File Path="./tests/common/Directory.Build.props" />
     <File Path="./tests/Directory.Build.props" />
     <Project Path="tests/common/Tests.Common.Shared/Tests.Common.Shared.csproj" />
+    <Project Path="tests/common/Tests.Common/Tests.Common.csproj" />
   </Folder>
   <!--
   tests
@@ -158,6 +159,7 @@
   </Folder>
   <Folder Name="/project/samples/clients/maui-blazor-hybrid/App_Blazor_MobileBindings/">
   </Folder>
+  <Folder Name="/project/samples/clients/maui-blazor-hybrid/" />
   <Folder Name="/project/samples/clients/maui-blazor-hybrid/App_BlazorHybrid/">
   </Folder>
   
@@ -172,10 +174,16 @@
   <Folder Name="/project/samples/servers/apps-headless/APIs/">
   </Folder>
   <Folder Name="/project/samples/orchestration/">
+    <File Path="samples\orchestration\Directory.Build.props" />
   </Folder>
   <Folder Name="/project/samples/orchestration/App_Aspire_Starter/">
+    <Project Path="samples/orchestration/App_Aspire_Starter/App_Aspire_Starter.ApiService/App_Aspire_Starter.ApiService.csproj" />
+    <Project Path="samples/orchestration/App_Aspire_Starter/App_Aspire_Starter.AppHost/App_Aspire_Starter.AppHost.csproj" />
+    <Project Path="samples/orchestration/App_Aspire_Starter/App_Aspire_Starter.ServiceDefaults/App_Aspire_Starter.ServiceDefaults.csproj" />
+    <Project Path="samples/orchestration/App_Aspire_Starter/App_Aspire_Starter.Web/App_Aspire_Starter.Web.csproj" />
   </Folder>
   <Folder Name="/project/samples/orchestration/App_Aspire_AppHost_Single_File/">
+    <File Path="samples\orchestration\App_Aspire_AppHost_Single_File\apphost.cs" />
   </Folder>
 
 </Solution>
