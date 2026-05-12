@@ -1,2 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageId>HolisticWare.Core.BusinessDomainLogicModels</PackageId>
+    </PropertyGroup>
 </Project>
