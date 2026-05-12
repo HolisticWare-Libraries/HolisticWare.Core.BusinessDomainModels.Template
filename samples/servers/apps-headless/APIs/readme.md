@@ -35,3 +35,15 @@ ASP.NET Core Web API (native AOT)   webapiaot          [C#]
 ASP.NET OData Core Web API          odata-webapi       [C#]    
 Aspire Starter App (FastAPI/React)  aspire-py-starter  Python  
 ```
+
+## ASP.net async Web APIs
+
+
+*   Asynchronous APIs with .NET
+
+    *   https://www.youtube.com/watch?v=LCbR58sCmvQ
+
+        *   https://github.com/binarythistle/S06E02---Asynchronous-APIs-
+
+        *   https://learn.microsoft.com/en-us/azure/architecture/patterns/asynchronous-request-reply
+    
