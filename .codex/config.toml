@@ -1,0 +1,21 @@
+# default codex settings
+# .codex/config.toml
+model = "qwen3-coder-next:q8_0"
+model_provider = "ollama"
+model_reasoning_effort = "xhigh"
+personality = "pragmatic"
+# sandbox_mode = "workspace-write"
+
+# model_provider.<provider_name>
+# provider name can be anything but its
+# best to choose something you will easily remember
+[model_providers.ollama]
+name = "LM Studio"
+base_url = "http://127.0.0.1:11434/v1"
+[model_providers.lm_studio]
+name = "LM Studio"
+base_url = "http://127.0.0.1:11444/v1"
+[model_providers.lm_studio]
+name = "llama.cpp"
+base_url = "http://127.0.0.1:11454/v1"
+# your current preferences goes under here
