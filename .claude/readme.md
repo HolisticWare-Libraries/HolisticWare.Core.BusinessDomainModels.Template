@@ -1,5 +1,20 @@
 # Claude Code
 
+```
+ollama serve &
+brew upgrade claude-code
+ANTHROPIC_BASE_URL=http://localhost:11434
+ANTHROPIC_API_KEY=ollama
+ANTHROPIC_AUTH_TOKEN=ollama
+claude --model qwen3-coder-next:latest
+
+# qwen3-coder-next:q8_0       84
+# qwen3-coder-next:latest     51
+# gpt-oss:120b                65
+# gemma4:31b                  19
+# glm-4.7-flash:bf16          59
+```
+
 *   https://code.claude.com/docs/en/overview
 
 *   https://code.claude.com/docs/en/claude-directory
