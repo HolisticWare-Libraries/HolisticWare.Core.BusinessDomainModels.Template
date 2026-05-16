@@ -2,7 +2,8 @@
     <Import Project="..\Directory.Build.props" /> 
 
     <PropertyGroup>
-      <TargetFrameworks>net10.0</TargetFrameworks>
+        <TargetFramework></TargetFramework>
+        <TargetFrameworks>net10.0</TargetFrameworks>
     </PropertyGroup>
 
     <ItemGroup>

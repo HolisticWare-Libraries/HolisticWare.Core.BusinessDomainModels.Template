@@ -4,4 +4,8 @@
 	  <ProjectReference Include="..\..\HolisticWare.Core.UserInterfaceUI\HolisticWare.Core.UserInterfaceUI.csproj" />
 	</ItemGroup>
 
+    <PropertyGroup>
+        <PackageId>HolisticWare.Core.UserInterfaceUI.MAUI</PackageId>
+    </PropertyGroup>
+
 </Project>

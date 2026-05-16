@@ -1,5 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk.Razor">
 
+  <PropertyGroup>
+    <TargetFrameworks>net10.0</TargetFrameworks>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.2" />
   </ItemGroup>
@@ -7,5 +11,9 @@
   <ItemGroup>
     <ProjectReference Include="..\..\HolisticWare.Core.UserInterfaceUI\HolisticWare.Core.UserInterfaceUI.csproj" />
   </ItemGroup>
+
+    <PropertyGroup>
+        <PackageId>HolisticWare.Core.UserInterfaceUI.Razor</PackageId>
+    </PropertyGroup>
 
 </Project>

@@ -10,4 +10,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+    <PropertyGroup>
+        <PackageId>HolisticWare.Core.UserInterfaceUI</PackageId>
+    </PropertyGroup>
+
 </Project>
