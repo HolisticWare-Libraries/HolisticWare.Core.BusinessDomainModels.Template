@@ -9,6 +9,8 @@
     <File Path="../LICENSE" />
   </Folder>
   <Folder Name="/project/source/">
+    <File Path="Directory.Build.build.props" />
+    <File Path="Directory.Build.packages-dependencies.props" />
     <File Path="Directory.Build.props" />
     <File Path="Directory.Packages.props.txt" />
   </Folder>
@@ -41,6 +43,8 @@
   </Folder>
   <Folder Name="/project/source/infrastructure/database/">
     <File Path="infrastructure\database\Directory.Build.props" />
+    <Project Path="infrastructure/database/HolisticWare.Infrastructure.DataBase.PostgreSQL/HolisticWare.Infrastructure.DataBase.PostgreSQL.csproj" />
+    <Project Path="infrastructure/database/HolisticWare.Infrastructure.DataBase.SQLite/HolisticWare.Infrastructure.DataBase.SQLite.csproj" />
     <Project Path="infrastructure/database/HolisticWare.Infrastructure.DataBase/HolisticWare.Infrastructure.DataBase.csproj" />
   </Folder>
 </Solution>

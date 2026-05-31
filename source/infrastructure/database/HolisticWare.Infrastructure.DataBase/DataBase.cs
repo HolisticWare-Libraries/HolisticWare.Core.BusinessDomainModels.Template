@@ -1,7 +1,7 @@
 ﻿namespace HolisticWare.Core.BusinessDomainLogicModels;
 
-public partial class 
-                                        Model
+public partial class
+                                        DataBase
 {
     public
         string?
