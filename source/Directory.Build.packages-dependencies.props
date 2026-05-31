@@ -1,0 +1,33 @@
+<Project>
+    <!--
+        Maintanability + Security
+        NuGet Central Package Management
+    -->
+    <PropertyGroup>
+        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+        <!--
+        <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
+        -->
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <!--
+        Disable auditing entirely (not recommended)
+        -->
+        <NuGetAudit>true</NuGetAudit>
+        <!-- 
+        Only audit direct dependencies
+        -->
+        <NuGetAuditMode>direct</NuGetAuditMode>
+
+    </PropertyGroup>
+
+    <ItemGroup>
+        <!-- 
+        Suppress specific advisories after security review
+
+        <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-xxxx-xxxx-xxxx" />
+        -->
+    </ItemGroup>
+
+</Project>
