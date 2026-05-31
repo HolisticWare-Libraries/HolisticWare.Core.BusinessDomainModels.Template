@@ -1,18 +1,7 @@
 <Project>
     <Import Project="..\Directory.Build.props" />
     <Import Project=".\Directory.Build.build.props" />
-
-
-    <!--
-        Maintanability + Security
-        NuGet Central Package Management
-    -->
-    <PropertyGroup>
-        <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
-        <!--
-        <CentralPackageTransitivePinningEnabled>true</CentralPackageTransitivePinningEnabled>
-        -->
-    </PropertyGroup>
+    <Import Project=".\Directory.Build.packages-dependencies.props" />
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
@@ -23,7 +12,7 @@
             1.0.0
         </Version>
         <Authors>
-            moljac;
+            moljac;HolisticWare
         </Authors>
         <Company>
             HolisticWare.Core.BusinessDomainModels.TemplateRepo
