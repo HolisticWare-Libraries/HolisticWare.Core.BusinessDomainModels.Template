@@ -1,217 +1,416 @@
-# HolisticWare BusinessDomainLogic App Suite
+# Repository Guidelines
 
-# HolisticWare BusinessDomainLogic App Suite
+# Project Context
+
+*   purpose
+
+    *   template repo for projects
+
+        *   ignore
+
+            *   placeholder files and projects
+
+*   users audience
+
+    *   software developers
+
+*   versioning used
+
+    *   Semantic Versioning (SemVer) 
+
+        *   https://semver.org/
+
+    *   Calendar Versioning (CalVer) 
+
+        *   https://calver.org/
+
+        ```
+        YYYY0M.0D.
+        ```
+
+## Communication
+
+*   style
+
+*   tone
+
+    *   do use 
+
+        *   technical
+
+        *   formal
+
+        *   authoritative / educative
+
+        *   persuasive
+    
+        *   urgent
+
+        *   neutral
+
+        *   creative
+
+            for ideas during plan, discussions, etc
+
+    *   do not use 
+    
+        *   imprecise or generic responses
+
+        *   generalizations
+
+        *   emojis
+
+*   use repeatable structures (like Context -> Subject -> Constraints) 
 
 ## Architecture
 
-Overview
 
-This is a .NET 10.0 solution following Domain-Driven Design and Clean Architecture patterns:
+*   Monorepo with resulting packages 
+
+    ```
+    ./output
+    ```
+
+*   .NET
+
+    *   modern 
+
+        *   TFMs (TargetFrameworks)
+        
+            *   `net.10`
+            
+            *   `net9.0`
+
+        *   language version
+
+            *   latest
+
+        *   warn user if updates are needed
+
+*   code 
+
+    *   reusable source code and libraries/packages frontend in
+
+        ```
+        ./source
+        ```
+
+        *   business logic (domain logic) in
+
+            ```
+            ./source/business-domain-logic-models
+            ```
+
+        *   infrastructure (data acess and database[s])
+
+            ```
+            ./source/infrastructure/
+            ./source/infrastructure/data/
+            ./source/infrastructure/database/
+            ```
+
+        *   user interface
+
+            ```
+            ./source/user-interface-ui/
+            ```
+
+        *   utilities
+
+            *   cross cross cutting code 
+            
+            *   might be moved to some other repository
+
+            ```
+            ./source/utilities/
+            ```
+
+        *   complete structure
+
+            ```
+            source
+            ├── business-domain-logic-models
+            │   └── HolisticWare.Core.BusinessDomainLogicModels
+            ├── infrastructure
+            │   ├── data
+            │   │   └── HolisticWare.Infrastructure.Data
+            │   └── database
+            │       ├── HolisticWare.Infrastructure.DataBase
+            │       ├── HolisticWare.Infrastructure.DataBase.PostgreSQL
+            │       └── HolisticWare.Infrastructure.DataBase.SQLite
+            ├── user-interface-ui
+            │   ├── HolisticWare.Core.UserInterfaceUI
+            │   ├── maui
+            │   │   └── HolisticWare.Core.UserInterfaceUI.MAUI
+            │   │       └── Platforms
+            │   │           ├── Android
+            │   │           ├── MacCatalyst
+            │   │           ├── Windows
+            │   │           └── iOS
+            │   └── razor-blazor
+            │       └── HolisticWare.Core.UserInterfaceUI.Razor
+            │           └── wwwroot
+            └── utilities
+                └── HolisticWare.Utilities
+                    └── Core.Diagnostic
+            ```
+
+    *   samples (sample code, demos, playgrounds)
+
+            ```
+            ./samples/
+
+
+            ```
+
+
+- Node.js API in /packages/api
+- Shared types in /packages/types
+- PostgreSQL database via Prisma
+
+## Code Standards
+- TypeScript strict mode everywhere
+- ESLint + Prettier enforced (pre-commit hooks)
+- No default exports
+- JSDoc on all public APIs
+- Tests required for all new code
+
+## Commands
+- `npm test` - Run all tests
+- `npm run test:watch` - Watch mode
+- `npm run lint` - Check linting
+- `npm run lint:fix` - Auto-fix lint issues
+- `npm run build` - Production build
+- `npm run dev` - Start dev servers
+- `npm run db:migrate` - Run migrations
+- `npm run db:seed` - Seed database
+
+## Patterns
+
+### API Endpoints
+Create in packages/api/src/routes/
+Use Zod for request/response validation
+All endpoints need OpenAPI documentation
+
+### React Components
+Create in packages/ui/src/components/
+Use React Query for server state
+Prefer composition over inheritance
+
+### Database
+Prisma schema in packages/api/prisma/
+Always create migration for schema changes
+Use transactions for multi-table operations
+
+## Important Notes
+- NEVER commit .env files
+- API runs on :3000, UI on :3001
+- Local DB: postgres://localhost:5432/myapp
+- Feature flags in packages/api/src/flags.ts
+
+## Recent Decisions
+- 2025-12-01: Migrated to React Query v5
+- 2025-11-15: Adopted Zod for all validation
+- 2025-11-01: Moved to ESM modules
+
+# Summary Instructions
+When using compact, focus on:
+- Recent code changes
+- Test results
+- Architecture decisions made this session
+
+## Conversation/Chat Format
+
+*   tone
+
+*   input (from user)
+
+    *   markdown interpreted as knowledge graph
+
+        *   unnumbered lists (bullets/items)  
+        
+            *   represent hierarchical knowledge
+
+        *   numbered lists
+
+            *   represent 
+            
+                *   priority
+
+                *   order (of execution or importance or similar)
+
+*   output (from AI Assistant/Agent)
+
+    *   markdown
+
+        *   no emojis
+
+        *   paragraphs, lists, code blocks
+        
+            *   120 characters width 
+
+        *   tables
+
+            *   table width
+
+                *   unlimited
+
+            *   columns with equal width
+
+                *   rationale: better readability in raw text mode
+    
+    *   structured output (JSON, XML, YAML) only if requested 
+
+## Tools
+
+## Shell tool preferences
+
+*   tool use by functionality
+
+    *   filesystem (file/directory) searches
+    
+        1.  `fd`
+        
+        2.  `fdfind`
+        
+        2.  `ffind`
+
+        4.  `find`
+
+    *   file conten search 
+    
+        1.  `rg` (`ripgrep`) 
+        
+        2.  `grep`
+
+## Basic Informtion
+
+*   repository name: `HolisticWare.Core.BusinessDomainModels.TemplateRepo`
+
+*   tech stack
+
+    *   .NET
+
+        *   currently .NET 10 (`net10.0`)
+
+            *   warn user if there is newer version, so that update can be performed
+
+    *   cocnepts
+
+        *   KISS
+
+        *   DRY
+
+        *   DDD Domain‑Driven Design  
+
+        *   TDD 
+        
+        *   Clean Architecture
+
+
+## Project Structure & Module Organization
 
 ```
- HolisticWare.Core.BusinessDomainModels.TemplateRepo/
- ├─ source/
- │  ├─ business-domain-logic-models/                        # Core domain models (netstandard2.0, net9.0, net10.0)
- │  │  └─ HolisticWare.Core.BusinessDomainLogicModels/
- │  ├─ user-interface-ui/                                   # UI implementations
- │  │  ├─ HolisticWare.Core.UserInterfaceUI/                # Base UI library (net9.0, net10.0)
- │  │  ├─ HolisticWare.Core.UserInterfaceUI.MAUI/           # MAUI mobile UI (android, ios, maccatalyst, windows)
- │  │  └─ HolisticWare.Core.UserInterfaceUI.Razor/          # Blazor/Razor components
- │  └─ utilities/                                           # Cross-cutting concerns
- │     └─ HolisticWare.Utilities/                           # Shared utilities (includes Core.Diagnostic)
- └─ tests/
-    ├─ unit-tests/                                          # Unit tests (XUnit, MSTest, NUnit, TUnit)
-    └─ benchmark-tests/                                     # BenchmarkDotNet benchmarks
+source/
+├─ business-domain-logic-models/              # Core domain models
+│  └─ HolisticWare.Core.BusinessDomainLogicModels/
+├─ user-interface-ui/                        # UI implementations
+│  ├─ HolisticWare.Core.UserInterfaceUI/
+│  ├─ HolisticWare.Core.UserInterfaceUI.MAUI/
+│  └─ HolisticWare.Core.UserInterfaceUI.Razor/
+└─ utilities/                                # Cross‑cutting utilities
+   └─ HolisticWare.Utilities/
+tests/
+├─ unit-tests/                               # XUnit, MSTest, NUnit, TUnit
+└─ benchmark-tests/                          # BenchmarkDotNet
 ```
 
-## Key Projects
+Use the `source/` tree for production code, `tests/` for automated tests, and
+`samples/` (if present) for example applications.
 
-| Project                                       | Target Frameworks                          | Purpose                         |
-|-----------------------------------------------|--------------------------------------------|---------------------------------|
-| `HolisticWare.Core.BusinessDomainLogicModels` | netstandard2.0, net9.0, net10.0            | Core business domain models     |
-| `HolisticWare.Utilities`                      | netstandard2.0, net9.0, net10.0            | Shared utilities and diagnostics|
-| `HolisticWare.Core.UserInterfaceUI`           | net9.0, net10.0                            | Base UI abstractions            |
-| `HolisticWare.Core.UserInterfaceUI.MAUI`      | net10.0-android, ios, maccatalyst, windows | Mobile UI via MAUI              |
-| `HolisticWare.Core.UserInterfaceUI.Razor`     | net10.0                                    | Blazor/Razor components         |
+## Build, Test, and Development Commands
 
-## Development Commands
+All commands are run from the repository root (`HolisticWare.Core.BusinessDomainModels.TemplateRepo`).
 
-```bash
-# Build entire solution
+```
+# Build everything
 dotnet build
 
-# Build specific project
+# Build a single project
 dotnet build source/business-domain-logic-models/HolisticWare.Core.BusinessDomainLogicModels/
 
 # Run all tests
 dotnet test
 
-# Run specific test project
+# Run a specific test project
 dotnet test tests/unit-tests/UnitTests.XUnit/
 
-# Run benchmarks
-dotnet \
-    run \
-        --project tests/benchmark-tests/BenchmarkTests.BenchmarkDotNet/BenchmarkTests.BenchmarkDotNet.csproj \
-        --configuration Release
-
-# Run sample console app
-dotnet \
-    run \
-        --project samples/clients/console/cli/AppConsole.SampleDemo/
+# Run benchmarks (Release)
+dotnet run --project tests/benchmark-tests/BenchmarkTests.BenchmarkDotNet/BenchmarkTests.BenchmarkDotNet.csproj --configuration Release
 ```
 
-## Coding Conventions
+These commands target the supported frameworks (netstandard2.0, net9.0,
+net10.0) and automatically respect the global nullable reference type
+settings.
 
-- **Nullable reference types** enabled throughout
-- **Implicit usings** enabled
-- **PascalCase** for types and members
-- Target frameworks: netstandard2.0 for libraries, net10.0 for UI applications
-- MAUI projects use `<UseMaui>true</UseMaui>` and `<SingleProject>true</SingleProject>`
+## Coding Style & Naming Conventions
 
-## Solution Structure
+* Indent with **4 spaces**. Use Allman style braces (`{` on a new line).
+* **PascalCase** for public types, properties and methods.
+* **camelCase with underscore** (`_fieldName`) for private fields.
+* **Constants** are PascalCase (`MaxRetries = 5`).
+* Interfaces start with `I` (`IRepository`).
+* Optional linting: run `dotnet format` or use the built‑in Roslyn analyzers.
 
-- Main solution: `HolisticWare.Core.BusinessDomainModels.TemplateRepo.sln`
-- Solution nodes (slnx files) organize projects by category:
-  - `source/source.slnx` - Source projects
-  - `tests/tests.slnx` - All test projects
-  - `tests/unit-tests/unit-tests.slnx` - Unit tests only
-  - `tests/benchmark-tests/benchmark-tests.slnx` - Benchmark tests
-  - `samples/samples.slnx` - Sample applications
-
-## Testing Details
-
-### Running Tests
-
-```bash
-# Run all tests across all frameworks
-dotnet test
-
-# Run specific test framework
-dotnet test tests/unit-tests/UnitTests.XUnit/UnitTests.XUnit.csproj
-dotnet test tests/unit-tests/UnitTests.NUnit/UnitTests.NUnit.csproj
-dotnet test tests/unit-tests/UnitTests.MSTest/UnitTests.MSTest.csproj
-dotnet test tests/unit-tests/UnitTests.TUnit/UnitTests.TUnit.csproj
-
-# Run single test by name (XUnit)
-dotnet test tests/unit-tests/UnitTests.XUnit/ --filter "FullyQualifiedName~TestClass.TestMethod"
-
-# Run single test by name (NUnit)
-dotnet test tests/unit-tests/UnitTests.NUnit/ --filter "Name~TestMethod"
-
-# Run single test by name (MSTest)
-dotnet test tests/unit-tests/UnitTests.MSTest/ --filter "FullyQualifiedName~TestClass.TestMethod"
-
-# Run with detailed output
-dotnet test --verbosity normal
-```
-
-### Test Framework Support
-
-The codebase supports multiple test frameworks with compatibility aliases:
-
-- **XUnit** (default): `Fact`, `Theory`, `InlineData`
-- **NUnit**: `[Test]`, `[TestFixture]`, `[SetUp]`, `[TearDown]`
-- **MSTest**: `[TestMethod]`, `[TestClass]`, `[TestInitialize]`, `[TestCleanup]`
-- **TUnit**: Modern assertion syntax
-
-Test common shared helpers use preprocessor directives for framework compatibility:
+Example
+-------
 
 ```csharp
-#if XUNIT
-using Xunit;
-using Test = Xunit.FactAttribute;
-#elif NUNIT
-using NUnit.Framework;
-using Test = NUnit.Framework.TestAttribute;
-#elif MSTEST
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Test = Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute;
-#endif
-```
-
-## Code Style Guidelines
-
-### Formatting
-
-- **Indentation**: 4 spaces
-- **Braces**: Allman style (opening brace on new line)
-- **Line length**: Max 120 characters preferred
-
-```csharp
-public class Example
+public class CustomerService
 {
-    private readonly string _name;
+    private readonly string _repositoryName;
 
-    public Example(string name)
+    public CustomerService(string repositoryName)
     {
-        _name = name;
-    }
-
-    public string GetGreeting()
-    {
-        return $"Hello, {_name}!";
+        ArgumentNullException.ThrowIfNull(repositoryName);
+        _repositoryName = repositoryName;
     }
 }
 ```
 
-### Imports/Usings
+## Testing Guidelines
 
-- Place `using` directives at file top
-- Group by: System → Third-party → Project namespaces
-- Use `global::` for ambiguous types
+The repository supports four frameworks:
+* **XUnit** – default
+* **NUnit**
+* **MSTest**
+* **TUnit**
 
-### Naming Conventions
+Test naming: `<ClassName>_<MethodName>_Should<ExpectedResult>`. Tests live
+in the corresponding subfolder under `tests/unit-tests/`. Run using the
+`dotnet test` command above. For a single test use the `--filter` option
+provided in the reference section of the repo.
 
-- **Types**: PascalCase (`public class BusinessModel`)
-- **Private fields**: camelCase with underscore prefix (`private string _fieldName`)
-- **Public members**: PascalCase (`public string PropertyName { get; set; }`)
-- **Constants**: PascalCase (`public const int MaxValue = 100;`)
-- **Interfaces**: IPrefix (`public interface IRepository`)
-- **Namespaces**: `HolisticWare.{Area}.{Component}`
+## Commit & Pull Request Guidelines
 
-### Error Handling
+* Commit messages follow the **Conventional Commits** style: `feat:`, `fix:`
+  or `docs:`. Keep the subject line short (< 72 chars).
+* Pull requests must reference a Jira/Trello/… issue if applicable and
+  provide a concise description, list of changes, and any screenshots.
+* Reviewers will run the full build and test suite before merging.
 
-- Use `ArgumentNullException.ThrowIfNull()` for null checks
-- Use custom exceptions for domain errors
-- Log exceptions with context
+## Architecture Overview
 
-```csharp
-public void ProcessData(string input)
-{
-    ArgumentNullException.ThrowIfNull(input);
+The solution implements a classic Clean Architecture layered approach:
 
-    try
-    {
-        // Processing logic
-    }
-    catch (InvalidOperationException ex)
-    {
-        throw new DomainProcessingException("Failed to process data", ex);
-    }
-}
-```
+1. **Domain Models** – pure entities and value objects.
+2. **Utilities** – shared services such as diagnostics.
+3. **UI Layers** – MAUI for mobile and Razor for web.
+4. **Infrastructure** – any adapters or persistence mechanisms (not
+   present in this template).
 
-### Async/Await
+Refer to the `README` and folder structure for deeper details.
 
-- Use `async Task` for async methods
-- Avoid `async void` (except event handlers)
-- Use `ConfigureAwait(false)` in library code
-- Prefer `CancellationToken` for long-running operations
+---
 
-### Documentation
-
-- XML comments for public APIs (`/// <summary>`, `<param>`, `<returns>`)
-- Summary comments for complex logic
-
-## Copilot Instructions
-
-See `.github/copilot-instructions.md` for additional AI agent guidelines:
-
-- Maintain Domain-Driven Design and Clean Architecture patterns
-- Use dependency injection over static dependencies
-- Update related test cases when making changes
-- Document public API changes in XML comments
-
-
-
+Happy coding!
