@@ -467,6 +467,7 @@
     "context7*": false,
     "playwright*": false,
     */
+    "test-info" : true,
   },
   // === Permissions ===
   // Permission Configuration
