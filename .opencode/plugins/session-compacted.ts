@@ -2,9 +2,11 @@ export const NotificationPlugin = async ({ project, client, $, directory, worktr
   return {
     event: async ({ event }) => {
       // Send notification on session completion
-      if (event.type === "session.idle") {
+      if (event.type === "session.status") {
         // await $`osascript -e 'display notification "Session completed!" with title "opencode"'`
-        await $`dotnet run ./notification.cs`
+
+        // await $`dotnet --info`
+        //await $`dotnet run ./notification.cs`
       }
     },
   }
