@@ -170,8 +170,16 @@
   <Folder Name="/project/samples/servers/blazor/">
   </Folder>
   <Folder Name="/project/samples/servers/apps-headless/">
+    <File Path="samples\servers\apps-headless\Directory.Build.props" />
+    <File Path="samples\servers\apps-headless\readme.md" />
   </Folder>
   <Folder Name="/project/samples/servers/apps-headless/APIs/">
+    <File Path="samples\servers\apps-headless\APIs\Directory.Build.props" />
+    <File Path="samples\servers\apps-headless\APIs\readme.md" />
+    <Project Path="samples/servers/apps-headless/APIs/App_OData_WebAPI/App_OData_WebAPI.csproj" />
+    <Project Path="samples/servers/apps-headless/APIs/App_REST_WebAPI_Minimal/App_REST_WebAPI_Minimal.csproj" />
+    <Project Path="samples/servers/apps-headless/APIs/App_REST_WebAPI_Minimal_AOT/App_REST_WebAPI_Minimal_AOT.csproj" />
+    <Project Path="samples/servers/apps-headless/APIs/App_REST_WebAPI_Minimal_MVC_Controllers/App_REST_WebAPI_Minimal_MVC_Controllers.csproj" />
   </Folder>
   <Folder Name="/project/samples/orchestration/">
     <File Path="samples\orchestration\Directory.Build.props" />
