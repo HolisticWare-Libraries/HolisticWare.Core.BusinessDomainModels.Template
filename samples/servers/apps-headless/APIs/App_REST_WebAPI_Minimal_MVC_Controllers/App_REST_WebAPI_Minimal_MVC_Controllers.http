@@ -1,0 +1,6 @@
+@App_REST_WebAPI_Minimal_MVC_Controllers_HostAddress = http://localhost:5099
+
+GET {{App_REST_WebAPI_Minimal_MVC_Controllers_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
