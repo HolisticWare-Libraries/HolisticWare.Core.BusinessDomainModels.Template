@@ -1,4 +1,27 @@
 
+```
+dotnet \
+    new \
+        webapi \
+            --output App_REST_WebAPI_Minimal
+
+dotnet \
+    new \
+        webapiaot \
+            --output App_REST_WebAPI_Minimal_AOT
+
+dotnet \
+    new \
+        webapi \
+            --use-controllers \
+            --output App_REST_WebAPI_Minimal_MVC_Controllers
+
+dotnet \
+    new \
+        odata-webapi \
+            --output App_OData_WebAPI
+
+```
 
 ```shell
 dotnet \
