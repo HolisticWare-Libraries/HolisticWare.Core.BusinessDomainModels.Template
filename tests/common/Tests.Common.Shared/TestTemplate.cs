@@ -81,22 +81,22 @@ public class TestTemplate
         return;
     }
 
-    public 
-        void
+    public
+        double
                                         Test_Arrange
-                                        (                                            
+                                        (
                                         )
     {
-        return;
+        return 0.0;
     }
 
-    public 
-        void
+    public
+        double
                                         Test_Act
-                                        (                                            
+                                        (
                                         )
     {
-        return;
+        return 0.0;
     }
 
     public 
