@@ -23,10 +23,11 @@ public partial class
         double
                                         Age
                                         (
-                                            DateTime begin
+                                            DateTime begin,
+                                            DateTime? now = null
                                         )
     {
-        DateTime end = DateTime.Now;
+        DateTime end = now ?? DateTime.Now;
         TimeSpan a = end - begin;
 
         return a.TotalDays / 365.2425;
