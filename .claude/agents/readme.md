@@ -10,3 +10,8 @@ Specialize behavior with focused system prompts for specific domains
 Control costs by routing tasks to faster, cheaper models like Haiku
 
 https://github.com/Aaronontheweb/dotnet-skills
+
+
+* ideas
+
+  * https://github.com/AdrianStrugala/SolTechnology.Core
