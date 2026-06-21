@@ -1,0 +1,11 @@
+@App_REST_WebAPI_Minimal_AOT_HostAddress = http://localhost:5162
+
+GET {{App_REST_WebAPI_Minimal_AOT_HostAddress}}/todos/
+Accept: application/json
+
+###
+
+GET {{App_REST_WebAPI_Minimal_AOT_HostAddress}}/todos/1
+Accept: application/json
+
+###
