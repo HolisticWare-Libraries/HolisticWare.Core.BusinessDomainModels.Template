@@ -18,8 +18,8 @@
   (https://learn.microsoft.com/dotnet/core/testing/mstest-analyzers/mstest0001)
   -->
   <ItemGroup>
-    <PackageReference Include="Microsoft.Playwright.MSTest" Version="1.59.0" />
-    <PackageReference Include="MSTest" Version="4.2.2" />
+    <PackageReference Include="Microsoft.Playwright.MSTest" Version="1.60.0" />
+    <PackageReference Include="MSTest" Version="4.2.3" />
   </ItemGroup>
 
 
