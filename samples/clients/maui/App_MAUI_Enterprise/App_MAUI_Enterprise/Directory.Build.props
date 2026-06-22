@@ -16,8 +16,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<None Remove="**\*.DotSettings" />
-		<None Include="$(SolutionDir)\License.txt" Pack="True" PackagePath="" />
+		<None Remove="**/*.DotSettings" />
+		<None Include="$(SolutionDir)/License.txt" Pack="True" PackagePath="" />
 	</ItemGroup>
 
 </Project>
