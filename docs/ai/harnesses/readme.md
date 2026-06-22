@@ -12,6 +12,12 @@
 
     *   https://opencode.ai/docs/config/
 
+*   pi.dev
+
+    *   error: name must not contain consecutive hyphens
+
+        caused: "--"
+        fixed:  "-0-"
 
 
 | Harness              |  global (user)             | project `$ROOT_PROJECT`      |
@@ -27,3 +33,12 @@
 *   https://github.com/AndreasKarz/Vibe-Coding-Dev-Setup
 
 *   https://github.com/davidortinau/maui-skills
+
+CLAUDE.md
+
+https://www.aihero.dev/never-run-claude-init
+
+https://www.mindstudio.ai/blog/how-to-set-up-claude-md-file
+
+
+pi
