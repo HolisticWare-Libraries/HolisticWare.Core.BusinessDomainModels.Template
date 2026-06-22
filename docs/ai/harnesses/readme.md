@@ -17,8 +17,11 @@
     *   error: name must not contain consecutive hyphens
 
         caused: "--"
+
         fixed:  "-0-"
 
+    *   https://www.reddit.com/r/LocalLLaMA/comments/1stjwg5/been_using_pi_coding_agent_with_local_qwen36_35b/
+    
 
 | Harness              |  global (user)             | project `$ROOT_PROJECT`      |
 |----------------------|----------------------------|------------------------------|
