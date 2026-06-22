@@ -1,8 +1,8 @@
 <Project>
-    <Import Project="..\Directory.Build.props" />
+    <Import Project="../Directory.Build.props" />
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\..\..\..\source\business-domain-logic-models\HolisticWare.Core.BusinessDomainLogicModels\HolisticWare.Core.BusinessDomainLogicModels.csproj" />
+	  <ProjectReference Include="../../../../../source/business-domain-logic-models/HolisticWare.Core.BusinessDomainLogicModels/HolisticWare.Core.BusinessDomainLogicModels.csproj" />
 	</ItemGroup>
 
 </Project>
