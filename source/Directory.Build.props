@@ -1,7 +1,7 @@
 <Project>
-    <Import Project="..\Directory.Build.props" />
-    <Import Project=".\Directory.Build.build.props" />
-    <Import Project=".\Directory.Build.packages-dependencies.props" />
+    <Import Project="../Directory.Build.props" />
+    <Import Project="./Directory.Build.build.props" />
+    <Import Project="./Directory.Build.packages-dependencies.props" />
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
@@ -21,10 +21,10 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <None Include="readme.md" Pack="true" PackagePath="\" />
+        <None Include="readme.md" Pack="true" PackagePath="/" />
         <Content Include="../readme.md">
             <Pack>true</Pack>
-            <PackagePath>\readme-repo.md</PackagePath>
+            <PackagePath>/readme-repo.md</PackagePath>
         </Content>
 
     </ItemGroup>
