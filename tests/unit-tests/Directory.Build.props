@@ -1,5 +1,5 @@
 <Project>
-    <Import Project="..\Directory.Build.props" />
+    <Import Project="../Directory.Build.props" />
 
     <ItemGroup>
         <PackageReference Include="altcover" Version="9.0.102" />
