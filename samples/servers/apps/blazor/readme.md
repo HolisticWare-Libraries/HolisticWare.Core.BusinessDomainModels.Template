@@ -13,32 +13,35 @@ dotnet \
 dotnet \
     new \
         blazorblueprint \
-            --output App_BlazorBlueprint
+            --output App_Blazor_Blueprint
 
 dotnet \
     new \
         fluentmaui-blazor-web \
-            --output App_WebBlazor_MAUI_FLuent
+            --output App_Web_Blazor_MAUI_Fluent
 
 dotnet \
     new \
         fluentblazor \
-            --output App_BlazorFluent
+            --output App_Blazor_Fluent
 
 dotnet \
     new \
         fluentblazorwasm \
-            --output App_BlazorFluent_WASM
+            --output App_Blazor_Fluent_WASM
 
 dotnet \
     new \
         fluentuiblazorserver \
-            --output App_BlazorServer_FluentUI
+            --output App_Blazor_Server_FluentUI
 
 dotnet \
     new \
         fluentuiblazorwasm \
             --output App_Blazor_WASM_FluentUI
+
+```
+
 
 ```
 These templates matched your input: 'blazor'
