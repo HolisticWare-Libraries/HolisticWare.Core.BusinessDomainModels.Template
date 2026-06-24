@@ -5,15 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="10.0.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.Web" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\HolisticWare.Core.UserInterfaceUI\HolisticWare.Core.UserInterfaceUI.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageVersion Update="Microsoft.AspNetCore.Components.Web" Version="10.0.9" />
   </ItemGroup>
 
     <PropertyGroup>
