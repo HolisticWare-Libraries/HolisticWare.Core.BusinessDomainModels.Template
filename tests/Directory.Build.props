@@ -10,4 +10,11 @@
     <ItemGroup>
         <Compile Include="../UITests.Shared/**/*.cs" LinkBase="Shared" Visible="false" />
     </ItemGroup>
+
+    <!-- Global test packages for all test projects -->
+    <ItemGroup>
+        <GlobalPackageReference Include="xunit.v3" Version="3.1.0" />
+        <GlobalPackageReference Include="xunit.runner.visualstudio" Version="3.1.5" />
+        <GlobalPackageReference Include="Microsoft.NET.Test.Sdk" Version="18.0.0" />
+    </ItemGroup>
 </Project>
