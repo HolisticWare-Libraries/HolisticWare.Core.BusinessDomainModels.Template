@@ -130,8 +130,6 @@
 
         *   emojis
 
-    *   use repeatable structures (like Context -> Subject -> Constraints) 
-
     *   Respond like a smart caveman.
 
     *   Cut all filler, keep technical substance.Drop articles: (a, an, the), filler words (just, really, basically, actually).
@@ -142,10 +140,15 @@
 
     *   Maintain precision: Technical terms and code blocks remain exact.
 
-    *   Pattern: [thing] → [action] → [reason] → [next step].
+    *   use patterns and repeatable structures 
+    
+        *   samples:
+        
+            *   [context] -> [subject] -> [constraints]
+    
+            *   [thing] -> [action] -> [reason] -> [next step]
 
-    *   Output must be the shortest correct answer possible.
-
+    *   Output must be the shortest correct answer possible
 
 *   Act as AI expert/advanced coding assistant:
 
@@ -280,14 +283,130 @@
 - Shared types in /packages/types
 - PostgreSQL database via Prisma
 
-## Code Standards
-- TypeScript strict mode everywhere
-- ESLint + Prettier enforced (pre-commit hooks)
-- No default exports
-- JSDoc on all public APIs
-- Tests required for all new code
+## Code Standard - Rules and Recommendations AKA Styleguide
+
+*   rules
+
+    *   critical for 
+    
+        *   performance
+
+        *   security
+
+*   recommendations
+
+    *   modified/customized Allman/BSD style braces
+
+    *   extra indentation for readability and reduction of cognitive load in absence of tools
+
+        *   personal decision
+
+        *   to the left 
+        
+            *   return type (split through multiple lines if complex)
+
+        *   to the right 
+    
+            *   method/function names 
+
+            *   parameters (split for many parameters)
+
+    *   naming conventions
+
+        *   function/methods
+
+            `PascalCase`
+
+        *   types (classes, structs, enums ) 
+        
+            `PascalCase`
+
+        *   parameters
+        
+            `snake_case` or `camelCase`
+            
+    *   do not use 
+    
+        *   `var` 
+
+            *   use 
+            
+                *   explicit variable types 
+
+                *   fully qualified types
+
+    *   use
+
+        *   target-typed `new`
+
+        *   prefer collection expressions over collection initializers
+
+            *   unified syntax
+
+            *   performance (initializers might call `.Add()`)
+
+*   width 120 characters
+
 
 ## Commands
+
+1.  build 
+
+    ```bash
+    export PROJECT_ROOT=.
+    export PROJECT_ARTIFACTS="*.slnx"
+    find $PROJECT_ROOT -type f -iname $PROJECT_ARTIFACTS -exec dotnet build {} \;
+    ```
+
+    1.  project artifacts (dotnet .NET)
+
+        1.  solution files 
+        
+            ```bash
+            export PROJECT_ARTIFACTS="*.slnx"
+            ```
+
+        1.  project files 
+        
+            ```bash
+            export PROJECT_ARTIFACTS="*.csproj"
+            ```
+
+    ```bash
+    export PROJECT_ROOT=.
+    export PROJECT_ARTIFACTS="*.slnx"
+    find $PROJECT_ROOT -type f -iname "*.slnx" -exec dotnet build {} \;
+    ```
+
+    1.  artifacts
+    
+        1.  reusable libraries/binaries 
+
+            macosx/linux:
+
+
+            1.  busines logic
+
+            2.  UI components
+
+            3.  utilities (cross-cutting)
+
+        2.  tests
+
+            1.  unit-tests
+
+            2.  benchmarks
+
+        3.  samples
+
+
+gitlab-ci-local
+
+
+
+
+
+
 - `npm test` - Run all tests
 - `npm run test:watch` - Watch mode
 - `npm run lint` - Check linting
