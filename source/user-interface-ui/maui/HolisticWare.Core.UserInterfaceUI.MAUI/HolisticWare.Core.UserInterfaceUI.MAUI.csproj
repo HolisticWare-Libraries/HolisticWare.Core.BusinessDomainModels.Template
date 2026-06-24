@@ -3,15 +3,8 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\..\HolisticWare.Core.UserInterfaceUI\HolisticWare.Core.UserInterfaceUI.csproj" />
 	</ItemGroup>
-	
-	<ItemGroup>
-	  <PackageVersion Update="Microsoft.Maui.Controls" Version="10.0.71" />
-	</ItemGroup>
 
     <PropertyGroup>
-        <TargetFrameworks>netstandard2.0;net10.0;net9.0</TargetFrameworks>
-        <ImplicitUsings>enable</ImplicitUsings>
-        <Nullable>enable</Nullable>
         <PackageId>HolisticWare.Core.UserInterfaceUI.MAUI</PackageId>
     </PropertyGroup>
 
