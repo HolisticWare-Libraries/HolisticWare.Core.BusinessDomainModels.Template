@@ -1,0 +1,11 @@
+<Project>
+    <!--
+    this file prevents reading Directory.Build.props in parent folders
+    -->
+    <!--
+    <Import 
+        Project="$(MSBuildExtensionsPath)/$(MSBuildToolsVersion)/Microsoft.Common.props" 
+        Condition="Exists('$(MSBuildExtensionsPath)/$(MSBuildToolsVersion)/Microsoft.Common.props')" 
+        />  
+    -->
+</Project>
