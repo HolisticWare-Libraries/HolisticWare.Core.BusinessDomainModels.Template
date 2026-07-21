@@ -1,4 +1,3 @@
-string gh = "https://github.com";
 
 Dictionary
         <
@@ -8,31 +7,123 @@ Dictionary
             ),
             string[]
         > 
-            ExternalReposToDownload = new()
-                                        {
-                                            // https://nuget.org/packages?packagetype=dotnettool
-                                            {
-                                                (
-                                                    url_repo:   $"{gh}/cake-build/cake/archive/refs/heads/develop.zip",
-                                                    git_branch: "develop" 
-                                                ),
-                                                new string[]
-                                                {
-                                                    "dotnet",
-                                                    "tool",
-                                                    "cake",
-                                                }
-                                            },
-                                            {
-                                                (
-                                                    url_repo:   $"{gh}/domaindrivendev/Swashbuckle.AspNetCore/archive/refs/heads/master.zip",
-                                                    git_branch: "develop" 
-                                                ),
-                                                new string[]
-                                                {
-                                                    "dotnet",
-                                                    "tool",
-                                                    "Swashbuckle.CLI",
-                                                }
-                                            },
-                                        };
+            ExternalReposToDownload;
+            
+ExternalReposToDownload = new Dictionary
+                                    <
+                                        (
+                                            string url_repo,
+                                            string git_branch
+                                        ),
+                                        string[]
+                                    >
+                                        ()
+{
+    {
+        (
+            url_repo:   "https://github.com/dotnet/maui/archive/refs/heads/main.zip",
+            git_branch: "main" 
+        ),
+        new string[]
+        {
+            "source",
+            "MAUI",
+        }
+    },
+    {
+        (
+            url_repo:   "https://github.com/xamarin/Xamarin.Forms/archive/refs/heads/5.0.0.zip",
+            git_branch: "5.0.0"
+        ),
+        new string[]
+        {
+            "source",
+            "Xamarin.Forms",
+        }
+    },
+    {
+        (
+            url_repo:   "https://github.com/dotnet/maui-samples/archive/refs/heads/main.zip",
+            git_branch: "main"
+        ),
+        new string[]
+        {
+            "samples",
+            "maui",
+            "dotnet",
+            "maui-samples",
+        }
+    },
+    {
+        (
+            url_repo:   "https://github.com/behl1anmol/Todo.me/archive/refs/heads/master.zip",
+            git_branch: "master"
+        ),
+        new string[]
+        {
+            "samples",
+            "maui",
+            "Todo.me"
+        }
+    },
+    {
+        (
+            url_repo:   "https://github.com/naweed/MauiScientificCalculator/archive/refs/heads/main.zip",
+            git_branch: "master"
+        ),
+        new string[]
+        {
+            "samples",
+            "maui",
+            "ScientificCalculator"
+        }
+    },
+    {
+        (
+            url_repo:   "https://github.com/jsuarezruiz/netmaui-chat-app-challenge/archive/refs/heads/main.zip",
+            git_branch: "master"
+        ),
+        new string[]
+        {
+            "samples",
+            "maui",
+            "ChatApp"
+        }
+    },
+    {
+        (
+            url_repo:   "https://github.com/microsoft/dotnet-podcasts/archive/refs/heads/main.zip",
+            git_branch: "master"
+        ),
+        new string[]
+        {
+            "samples",
+            "maui",
+            "dotnet-podcasts"
+        }
+    },
+    {
+        (
+            url_repo:   "https://github.com/davidortinau/WeatherTwentyOne/archive/refs/heads/main.zip",
+            git_branch: "master"
+        ),
+        new string[]
+        {
+            "samples",
+            "maui",
+            "WeatherTwentyOne"
+        }
+    },
+    {
+        (
+            url_repo:   "https://github.com/drasticactions/WeatherTwentyTwo/archive/refs/heads/main.zip",
+            git_branch: "master"
+        ),
+        new string[]
+        {
+            "samples",
+            "maui",
+            "TodWeatherTwentyTwo"
+        }
+    },
+};
