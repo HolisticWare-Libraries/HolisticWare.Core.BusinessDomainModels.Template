@@ -8,18 +8,6 @@
     <File Path="./Directory.Build.props" />
     <File Path="./LICENSE" />
   </Folder>
-  <Folder Name="/project/samples/servers/blazor/fluent/">
-    <Project Path="samples/servers/apps/blazor/fluent/App_Blazor_Fluent/App_Blazor_Fluent.csproj" />
-    <Project Path="samples/servers/apps/blazor/fluent/App_Blazor_Fluent_WASM/App_Blazor_Fluent_WASM.csproj" />
-  </Folder>
-  <Folder Name="/project/samples/servers/blazor/fluentui/">
-    <Project Path="samples/servers/apps/blazor/fluentui/App_Blazor_Server_FluentUI/App_Blazor_Server_FluentUI.csproj" />
-    <Project Path="samples/servers/apps/blazor/fluentui/App_Blazor_WASM_FluentUI/App_Blazor_WASM_FluentUI.csproj" />
-  </Folder>
-  <Folder Name="/project/samples/servers/blazor/shadcn-ui/">
-    <Project Path="samples/servers/apps/blazor/shadcn-ui/App_Blazor_Blueprint/App_Blazor_Blueprint.Client/App_Blazor_Blueprint.Client.csproj" />
-    <Project Path="samples/servers/apps/blazor/shadcn-ui/App_Blazor_Blueprint/App_Blazor_Blueprint.csproj" />
-  </Folder>
   <!--
   source libraries 
   business/domain logic
@@ -204,6 +192,18 @@
   </Folder>
   <Folder Name="/project/samples/orchestration/App_Aspire_AppHost_Single_File/">
     <File Path="samples\orchestration\App_Aspire_AppHost_Single_File\apphost.cs" />
+  </Folder>
+  <Folder Name="/project/samples/servers/blazor/fluent/">
+    <Project Path="samples/servers/apps/blazor/fluent/App_Blazor_Fluent/App_Blazor_Fluent.csproj" />
+    <Project Path="samples/servers/apps/blazor/fluent/App_Blazor_Fluent_WASM/App_Blazor_Fluent_WASM.csproj" />
+  </Folder>
+  <Folder Name="/project/samples/servers/blazor/fluentui/">
+    <Project Path="samples/servers/apps/blazor/fluentui/App_Blazor_Server_FluentUI/App_Blazor_Server_FluentUI.csproj" />
+    <Project Path="samples/servers/apps/blazor/fluentui/App_Blazor_WASM_FluentUI/App_Blazor_WASM_FluentUI.csproj" />
+  </Folder>
+  <Folder Name="/project/samples/servers/blazor/shadcn-ui/">
+    <Project Path="samples/servers/apps/blazor/shadcn-ui/App_Blazor_Blueprint/App_Blazor_Blueprint.Client/App_Blazor_Blueprint.Client.csproj" />
+    <Project Path="samples/servers/apps/blazor/shadcn-ui/App_Blazor_Blueprint/App_Blazor_Blueprint.csproj" />
   </Folder>
 
 </Solution>
