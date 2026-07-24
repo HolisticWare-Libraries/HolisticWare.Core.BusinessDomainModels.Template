@@ -3,6 +3,21 @@ using System.Diagnostics;
 namespace Core.Diagnostics;
 
 /// <summary>
+/// Result of executing a process via <see cref="Process"/>.
+/// </summary>
+public sealed class ProcessResult
+{
+    /// <summary>Standard output captured from the executed process.</summary>
+    public string StandardOutput { get; init; } = string.Empty;
+
+    /// <summary>Standard error captured from the executed process.</summary>
+    public string StandardError { get; init; } = string.Empty;
+
+    /// <summary>Exit code returned by the process.</summary>
+    public int ExitCode { get; init; }
+}
+
+/// <summary>
 /// Core.Diagnostics.Process wrapper class for System.Diagnostics.Process
 ///     *   CommandLine
 ///         *   stdio/stderr redirection
@@ -125,25 +140,60 @@ public partial class
             string program_binary_application,
             string arguments
         )
-        
+
                                     SplitCommandLine
                                     (
                                         string command_line
                                     )
     {
+        if (string.IsNullOrWhiteSpace(command_line))
+            return ("", "");
+
         int idx = command_line.IndexOf(" ", StringComparison.InvariantCulture);
+
+        if (idx < 0)
+            return (command_line, "");
 
         string str_1 = command_line.Substring(0, idx);
         string str_2 = command_line.Substring(idx + 1);
-        
+
         return  (str_1, str_2);
     }
     
-    public
-        System.Diagnostics.Process?
-                                    Start
-                                    (
-                                    )
+    /// <summary>
+    /// Synchronously starts the process, waits for exit, and captures stdout/stderr.
+    /// </summary>
+    public ProcessResult Start()
+    {
+        using System.Diagnostics.Process p = InternalStart();
+        p.WaitForExit();
+        return new ProcessResult
+        {
+            StandardOutput = p.StandardOutput.ReadToEnd(),
+            StandardError = p.StandardError.ReadToEnd(),
+            ExitCode = p.ExitCode,
+        };
+    }
+
+    /// <summary>
+    /// Asynchronously starts the process, waits for exit, and captures stdout/stderr.
+    /// </summary>
+    public async Task<ProcessResult> StartAsync()
+    {
+        using System.Diagnostics.Process p = InternalStart();
+        await p.WaitForExitAsync().ConfigureAwait(false);
+        string standardOutput = await p.StandardOutput.ReadToEndAsync().ConfigureAwait(false);
+        string standardError = await p.StandardError.ReadToEndAsync().ConfigureAwait(false);
+
+        return new ProcessResult
+        {
+            StandardOutput = standardOutput,
+            StandardError = standardError,
+            ExitCode = p.ExitCode,
+        };
+    }
+
+    private System.Diagnostics.Process InternalStart()
     {
         System.Diagnostics.ProcessStartInfo psi = new()
                                                     {
@@ -156,36 +206,8 @@ public partial class
                                                     };
         System.Diagnostics.Process p = new ();
         p.StartInfo = psi;
-        p.ErrorDataReceived += Process_OnErrorDataReceived;
-        p.OutputDataReceived += Process_OnOutputDataReceived;
-        p.EnableRaisingEvents = true;
         p.Start();
-        p.BeginOutputReadLine();
-        p.BeginErrorReadLine();
-        p.WaitForExit();
 
         return p;
-    }
-
-    protected 
-        void
-                                        Process_OnErrorDataReceived
-                                        (
-                                            object sender,
-                                            DataReceivedEventArgs e
-                                        )
-    {
-        return;
-    }
-    
-    protected
-        void
-                                        Process_OnOutputDataReceived
-                                        (
-                                            object sender,
-                                            DataReceivedEventArgs e
-                                        )
-    {
-        return;
     }
 }
