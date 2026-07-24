@@ -1,0 +1,32 @@
+root = true
+
+[*.cs]
+indent_style = space
+indent_size = 4
+dotnet_indentation_style = vs
+dotnet_indent_case_continuation = true
+dotnet_new_line_before_open_brace = all
+dotnet_new_line_before_else = true
+dotnet_new_line_before_catch = true
+dotnet_new_line_before_finally = true
+dotnet_new_line_before_members_in_object_with_initializer = false
+dotnet_new_line_before_members_in_anonymous_types = false
+dotnet_new_line_between_query_clauses = true
+
+indexer_qualification_style = never_if_possible
+qualify_member_access_expression_style = always_if_missing_context
+qualify_instance_expression_style = never
+qualify_method_call_style = never_if_possible
+
+unused_using_directive = suggest_remove
+unused_private_member = suggest_remove
+
+dotnet_sort_system_directive_first = true
+dotnet_separate_import_directive_groups = false
+
+top_level_statements_enabled = true
+
+[*.{cs,vb}]
+
+[*.resx]
+resx_resource_designer = true
