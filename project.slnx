@@ -139,31 +139,32 @@
   </Folder>
   <Folder Name="/project/samples/clients/console/cli/">
   </Folder>
-  <Folder Name="/project/samples/clients/maui/">
+  <Folder Name="/project/samples/clients/multi-form-factor/maui/">
   </Folder>
-  <Folder Name="/project/samples/clients/maui/App_MAUI/">
+  <Folder Name="/project/samples/clients/multi-form-factor/maui/App_MAUI/">
   </Folder>
-  <Folder Name="/project/samples/clients/maui/App_MAUIApp/">
+  <Folder Name="/project/samples/clients/multi-form-factor/maui/App_MAUIApp/">
   </Folder>
-  <Folder Name="/project/samples/clients/maui/App_MAUI_Comet/">
+  <Folder Name="/project/samples/clients/multi-form-factor/maui/App_MAUI_Comet/">
   </Folder>
-  <Folder Name="/project/samples/clients/maui/App_MAUI_Micro/">
+  <Folder Name="/project/samples/clients/multi-form-factor/maui/App_MAUI_Micro/">
   </Folder>
-  <Folder Name="/project/samples/clients/maui/App_MAUI_Enterprise/">
+  <Folder Name="/project/samples/clients/multi-form-factor/maui/App_MAUI_Enterprise/">
   </Folder>
-  <Folder Name="/project/samples/clients/maui/App_MAUI_MultiProject/">
+  <Folder Name="/project/samples/clients/multi-form-factor/maui/App_MAUI_MultiProject/">
   </Folder>  
-  <Folder Name="/project/samples/clients/maui/App_MAUI_MultiHead/">
+  <Folder Name="/project/samples/clients/multi-form-factor/maui/App_MAUI_MultiHead/">
   </Folder>
   <Folder Name="/project/samples/clients/maui-blazor-hybrid/App_MAUI_Blazor_Hybrid/">
   </Folder>
   <Folder Name="/project/samples/clients/maui-blazor-hybrid/App_Blazor_MobileBindings/">
   </Folder>
-  <Folder Name="/project/samples/clients/maui-blazor-hybrid/" />
-  <Folder Name="/project/samples/clients/maui-blazor-hybrid/App_BlazorHybrid/">
+
+  <Folder Name="/project/samples/clients/multi-form-factor/maui-blazor-hybrid/" />
+  <Folder Name="/project/samples/clients/multi-form-factor/maui-blazor-hybrid/App_BlazorHybrid/">
   </Folder>
   
-  <Folder Name="/project/samples/clients/avalonia/">
+  <Folder Name="/project/samples/clients/multi-form-factor/avalonia/">
   </Folder>
   <Folder Name="/project/samples/servers/">
   </Folder>
