@@ -1,0 +1,13 @@
+<Project>
+    <!--
+        Central Package Management — all package versions defined here.
+        Projects reference packages without Version attributes.
+    -->
+
+
+
+    <Import 
+        Condition="$([MSBuild]::GetPathOfFileAbove('Directory.Packages.props', '$(MSBuildThisFileDirectory)../')) != ''"
+        Project="$([MSBuild]::GetPathOfFileAbove('Directory.Packages.props', '$(MSBuildThisFileDirectory)../'))" 
+        />
+</Project>
