@@ -41,10 +41,19 @@
         <PackageVersion Include="OpenTelemetry.Instrumentation.Http" Version="1.15.1" />
         <PackageVersion Include="OpenTelemetry.Instrumentation.Runtime" Version="1.15.1" />
 
-        <!-- FluentUI -->
+        <!--
+        Blazor FluentUI
+        -->
         <PackageVersion Include="Microsoft.FluentUI.AspNetCore.Components" Version="4.14.2" />
         <PackageVersion Include="Microsoft.FluentUI.AspNetCore.Components.Icons" Version="4.14.2" />
         <PackageVersion Include="Microsoft.Fast.Components.FluentUI" Version="3.0.18" />
+
+        <!--
+        Blazor shacdn-ui
+        -->
+        <PackageVersion Include="BlazorBlueprint.Components" Version="3.15.0" />
+        <PackageVersion Include="BlazorBlueprint.Primitives" Version="3.15.0" />
+        <PackageVersion Include="BlazorBlueprint.Icons.Lucide" Version="2.0.2" />
 
         <!-- ML.NET -->
         <PackageVersion Include="Microsoft.ML" Version="3.0.1" />
@@ -103,5 +112,7 @@
         <PackageVersion Include="Clancey.Comet" Version="0.3.466-beta" />
         <PackageVersion Include="Reloadify3000" Version="1.0.8" />
     </ItemGroup>
+
+
 
 </Project>
