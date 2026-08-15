@@ -1,3 +1,5 @@
+@AGENTS.md
+
 # Repository Guidelines
 
 # Project Context
