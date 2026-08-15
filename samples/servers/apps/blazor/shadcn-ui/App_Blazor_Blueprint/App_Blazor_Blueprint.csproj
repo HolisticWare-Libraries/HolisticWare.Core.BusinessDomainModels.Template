@@ -13,10 +13,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="BlazorBlueprint.Components" Version="3.*" />
-    <PackageReference Include="BlazorBlueprint.Primitives" Version="3.*" />
-    <PackageReference Include="BlazorBlueprint.Icons.Lucide" Version="2.*" />
-    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="10.*" />
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" />
+    <PackageReference Include="BlazorBlueprint.Components"  />
+    <PackageReference Include="BlazorBlueprint.Primitives" />
+    <PackageReference Include="BlazorBlueprint.Icons.Lucide" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="App_Blazor_Blueprint.Client\App_Blazor_Blueprint.Client.csproj" />
   </ItemGroup>
 
