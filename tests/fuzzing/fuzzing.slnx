@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/fuzzing/">
+    <File Path="readme.md" />
+    <Project Path="AppConsole_Fuzing_FuzzDotNet/AppConsole_Fuzing_FuzzDotNet.csproj" />
+    <Project Path="AppConsole_Fuzing_Fuzzlyn/AppConsole_Fuzing_Fuzzlyn.csproj" />
+    <Project Path="AppConsole_Fuzing_SharpFuzz/AppConsole_Fuzing_SharpFuzz.csproj" />
+  </Folder>
+</Solution>
