@@ -69,16 +69,16 @@
   <Folder Name="/project/tests/unit-tests/">
     <File Path="./tests/unit-tests/readme.md" />
     <File Path="./tests/unit-tests/Directory.Build.props" />
-    <Project Path="./tests/unit-tests/AppConsole.UnitTests.TUnit/AppConsole.UnitTests.TUnit.csproj" />
-    <Project Path="./tests/unit-tests/UnitTests.MSTest/UnitTests.MSTest.csproj" />
-    <Project Path="./tests/unit-tests/UnitTests.NUnit/UnitTests.NUnit.csproj" />
-    <Project Path="./tests/unit-tests/UnitTests.TUnit/UnitTests.TUnit.csproj" />
-    <Project Path="./tests/unit-tests/UnitTests.XUnit/UnitTests.XUnit.csproj" />
+    <Project Path="tests/non-functional-tests/functional-tests/unit-tests/AppConsole.UnitTests.TUnit/AppConsole.UnitTests.TUnit.csproj" />
+    <Project Path="tests/non-functional-tests/functional-tests/unit-tests/UnitTests.MSTest/UnitTests.MSTest.csproj" />
+    <Project Path="tests/non-functional-tests/functional-tests/unit-tests/UnitTests.NUnit/UnitTests.NUnit.csproj" />
+    <Project Path="tests/non-functional-tests/functional-tests/unit-tests/UnitTests.TUnit/UnitTests.TUnit.csproj" />
+    <Project Path="tests/non-functional-tests/functional-tests/unit-tests/UnitTests.XUnit/UnitTests.XUnit.csproj" />
   </Folder>
   <Folder Name="/project/tests/unit-tests/common/">
     <File Path="./tests/unit-tests/common/Directory.Build.props" />
-    <Project Path="./tests/unit-tests/common/UnitTests.Common/UnitTests.Common.csproj" />
-    <Project Path="./tests/unit-tests/common/UnitTests.Common.Shared/UnitTests.Common.Shared.csproj" />
+    <Project Path="tests/non-functional-tests/functional-tests/unit-tests/common/UnitTests.Common.Shared/UnitTests.Common.Shared.csproj" />
+    <Project Path="tests/non-functional-tests/functional-tests/unit-tests/common/UnitTests.Common/UnitTests.Common.csproj" />
   </Folder>  
   <!--
   tests
@@ -87,14 +87,14 @@
   <Folder Name="/project/tests/benchmark-tests/">
     <File Path="./tests/benchmark-tests/readme.md" />
     <File Path="./tests/benchmark-tests/Directory.Build.props" />
-    <Project Path="./tests/benchmark-tests/AppConsole.BenchmarkTests.BenchmarkDotNet/AppConsole.BenchmarkTests.BenchmarkDotNet.csproj" />
-    <Project Path="./tests/benchmark-tests/BenchmarkTests.BenchmarkDotNet/BenchmarkTests.BenchmarkDotNet.csproj" />
+    <Project Path="tests/non-functional-tests/benchmark-tests/AppConsole.BenchmarkTests.BenchmarkDotNet/AppConsole.BenchmarkTests.BenchmarkDotNet.csproj" />
+    <Project Path="tests/non-functional-tests/benchmark-tests/BenchmarkTests.BenchmarkDotNet/BenchmarkTests.BenchmarkDotNet.csproj" />
   </Folder>
   <Folder Name="/project/tests/benchmark-tests/common/">
     <File Path="./tests/benchmark-tests/common/readme.md" />
     <File Path="./tests/benchmark-tests/common/Directory.Build.props" />
-    <Project Path="./tests/benchmark-tests/common/BenchmarkTests.Common/BenchmarkTests.Common.csproj" />
-    <Project Path="./tests/benchmark-tests/common/BenchmarkTests.Common.Shared/BenchmarkTests.Common.Shared.csproj" />
+    <Project Path="tests/non-functional-tests/benchmark-tests/common/BenchmarkTests.Common.Shared/BenchmarkTests.Common.Shared.csproj" />
+    <Project Path="tests/non-functional-tests/benchmark-tests/common/BenchmarkTests.Common/BenchmarkTests.Common.csproj" />
   </Folder>  
   <!--
   tests
@@ -157,12 +157,14 @@
   </Folder>
   <Folder Name="/project/samples/clients/maui-blazor-hybrid/App_MAUI_Blazor_Hybrid/">
   </Folder>
+  <Folder Name="/project/samples/clients/maui-blazor-hybrid/" />
   <Folder Name="/project/samples/clients/maui-blazor-hybrid/App_Blazor_MobileBindings/">
   </Folder>
 
   <Folder Name="/project/samples/clients/multi-form-factor/maui-blazor-hybrid/" />
   <Folder Name="/project/samples/clients/multi-form-factor/maui-blazor-hybrid/App_BlazorHybrid/">
   </Folder>
+  <Folder Name="/project/samples/clients/multi-form-factor/" />
   
   <Folder Name="/project/samples/clients/multi-form-factor/avalonia/">
   </Folder>
