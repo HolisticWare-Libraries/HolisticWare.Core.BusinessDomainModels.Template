@@ -1,6 +1,30 @@
 Fuzzing
 
-https://lcamtuf.coredump.cx/afl/README.txt
+Fuzzing
+
+    https://github.com/metalnem/sharpfuzz
+
+    <PackageReference Include="SharpFuzz" Version="2.3.0" />
+
+
+    brew install afl++
+
+    https://github.com/aflplusplus/aflplusplus
+    
+    https://github.com/twcclegg/libphonenumber-csharp/tree/main/csharp/PhoneNumbers.Fuzz
+
+    https://github.com/Metalnem/sharpfuzz-samples
+
+    https://github.com/ovska/FlameCsv/tree/main/tools/Fuzzing
+
+    https://github.com/Dubzer/Dubzer.WhatwgUrl/tree/master/src/Dubzer.WhatwgUrl.Fuzzing
+
+    https://github.com/Metalnem/dotnet-fuzzers
+
+    https://github.com/Yubico/Yubico.NET.SDK/blob/main/Yubico.Core/fuzz/Program.cs
+
+    
+    https://lcamtuf.coredump.cx/afl/README.txt
 
 https://github.com/Metalnem/sharpfuzz-samples
 
