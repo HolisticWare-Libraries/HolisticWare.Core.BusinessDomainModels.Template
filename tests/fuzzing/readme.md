@@ -10,7 +10,7 @@ Fuzzing
     brew install afl++
 
     https://github.com/aflplusplus/aflplusplus
-    
+
     https://github.com/twcclegg/libphonenumber-csharp/tree/main/csharp/PhoneNumbers.Fuzz
 
     https://github.com/Metalnem/sharpfuzz-samples
@@ -23,7 +23,14 @@ Fuzzing
 
     https://github.com/Yubico/Yubico.NET.SDK/blob/main/Yubico.Core/fuzz/Program.cs
 
+    39C3 - Demystifying Fuzzer Behaviour
+        https://www.youtube.com/watch?v=h3UcecN5fvQ
+
+
+    Fuzzing 101
     
+        https://www.youtube.com/watch?v=NI2w6eT8p-E
+
     https://lcamtuf.coredump.cx/afl/README.txt
 
 https://github.com/Metalnem/sharpfuzz-samples
