@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/source/" />
+  <Folder Name="/source/business-domain-logic-models/">
+    <Project Path="../../source/business-domain-logic-models/HolisticWare.Core.BusinessDomainLogicModels/HolisticWare.Core.BusinessDomainLogicModels.csproj" />
+  </Folder>
+</Solution>
